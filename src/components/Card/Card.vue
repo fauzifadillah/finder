@@ -3,11 +3,16 @@
     <div class="row">
       <img class="card-news-image" src="../../assets/image-1.png" alt="" />
     </div>
-    <div class="row">
-      News Category
+    <div class="row pt-3">
+      <div class="col-auto pl-0">
+        <img src="../../assets/red-symbol.png" alt="" />
+      </div>
+      <div class="col">
+        <p class="pt-1">News Category</p>
+      </div>
     </div>
     <div>
-      <b>Deskripsi</b>
+      <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
     </div>
   </template>
   <template v-else-if="title === 'Researches'">
@@ -22,14 +27,14 @@
   </template>
   <template v-else-if="title === 'Projects'">
     <div class="row card-projects p-4">
-      <div class="row">
+      <div class="row card-projects-name">
         PROJECTS NAME
       </div>
       <div class="row">
         <img class="card-news-image" src="../../assets/image-1.png" alt="" />
       </div>
       <div class="row">
-        <b>Big Data Analytics Living Lab: Better understanding</b>
+        <b class="card-projects-title">Big Data Analytics Living Lab: Better understanding</b>
       </div>
       <div>
         <p>
@@ -41,7 +46,7 @@
   </template>
   <template v-else-if="title === 'Teams'">
     <div class="card-teams p-4">
-      <div class="row">
+      <div class="row card-teams-location">
         <div class="col">
           BANDUNG, ID
         </div>
@@ -49,21 +54,25 @@
           PADJADJARAN UNIVERSITY
         </div>
       </div>
-      <div class="row">
+      <div class="row card-teams-profile">
         <div class="col">
-          I MADE JONI <br />
-          Professor Nanotechnology
+          <h2>I Made Joni</h2>
+          <p>Professor Nanotechnology</p>
         </div>
         <div class="col-auto ml-auto">
           <img src="../../assets/author-image.png" alt="" />
         </div>
       </div>
-      <div class="row">
-        Email <br />
-        Website <br />
+      <div class="row card-teams-contact">
+        <div class="col-12 pl-0">
+          <a href=""><u>Email</u></a>
+        </div>
+        <div class="col-12 pl-0">
+          <a href=""><u>Website</u></a>
+        </div>
       </div>
       <div class="row">
-        “Prestasi Adalah Kemampuan Dikalikan Pekerjaan” Camellia Panatarani,
+        <p>“Prestasi Adalah Kemampuan Dikalikan Pekerjaan” Camellia Panatarani,
         holder to the title of Doctor of Engineering from Hiroshima University,
         Japan, now works as a lecturer and researcher at the Department of
         Physics, MIPA Faculty at University of Padjadjaran, Bandung. Through her
@@ -73,7 +82,7 @@
         phosphorus products using simple methods. The research titled “Synthesis
         Halophospor on A Simple Solution Method” has been submitted to L’Oréal
         Indonesia Fellowship For Women In Science of 2008, and was completed in
-        2009.
+        2009.</p>
       </div>
     </div>
   </template>

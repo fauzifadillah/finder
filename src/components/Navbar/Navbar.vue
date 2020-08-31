@@ -16,11 +16,11 @@
             <div>
               <div>
                 <ul>
-                  <li><a href="/guides">Research</a></li>
-                  <li><a href="/guides">Publication</a></li>
-                  <li><a href="/guides">Team</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                  <li><a href="/news">News</a></li>
+                  <li><a href="/guides"><h1>Research</h1></a></li>
+                  <li><a href="/guides"><h1>Publication</h1></a></li>
+                  <li><a href="/guides"><h1>Team</h1></a></li>
+                  <li><a href="/contact"><h1>Contact</h1></a></li>
+                  <li><a href="/news"><h1>News</h1></a></li>
                 </ul>
               </div>
             </div>

@@ -7,11 +7,11 @@
           <h1>Ask us anything.</h1>
           <br />
           <h3>Headquarters #1</h3>
-          <p>
+          <h5 class="mt-4">
             Contact person 1 <br />
             Address <br />
             +62 859 4722 4853
-          </p>
+          </h5>
         </div>
         <div class="col-md-auto">
           <Location />
@@ -32,45 +32,16 @@
     </section>
     <section class="third-section">
       <div>
-        <h2>Let us know how we can help you</h2>
+        <h2 class="mb-5">Let us know how we can help you</h2>
       </div>
-      <div class="row">
-        <div class="col">
-          First name
-        </div>
-        <div class="col">
-          Last name
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          First name
-        </div>
-        <div class="col">
-          Last name
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          First name
-        </div>
-        <div class="col">
-          Last name
-        </div>
-      </div>
-      <div>
-        Your message
-      </div>
-      <div>
-        Button
-        <!-- Button -->
-      </div>
+      <ContactUs/>
     </section>
     <Footer />
   </div>
 </template>
 
 <script>
+import ContactUs from "@/components/ContactUs/ContactUs";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Location from "@/components/Location/Location";
@@ -78,6 +49,7 @@ import Location from "@/components/Location/Location";
 export default {
   name: "Contact",
   components: {
+    ContactUs,
     Navbar,
     Footer,
     Location,

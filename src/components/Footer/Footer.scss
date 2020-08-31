@@ -6,4 +6,25 @@
   bottom: 0;
   width: 100%;
   border-top: 1px solid #bfbfbf;
+
+  a {
+    color: #707070;
+  }
+
+  .text-grey {
+    color: #707070;
+  }
+
+  .footer-address {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-footer {
+    
+    .footer-address {
+      text-align: left;
+    }
+  }
 }

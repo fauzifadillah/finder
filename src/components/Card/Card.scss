@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+.red-symbol {
+  background: red;
+  border-radius: 50%;
+  height: 20px;
+}
+
 .card {
   &-news-image {
     width: 100%;
@@ -36,15 +42,49 @@
     }
   }
 
+  /* Style Card Projects */  
   &-projects {
     background: #fff;
     border-bottom: 5px solid #ff0000;
     margin-bottom: 20px !important;
+
+    &-name {
+      color: #AEAEAE;
+      font-size: 13px;
+      padding-bottom: 20px;
+    }
+  
+    &-title {
+      margin: 20px 0 30px 0;
+    }
   }
 
+  /* Style Card Teams */
   &-teams {
     background: #fff;
     border-bottom: 5px solid #ff0000;
     margin-bottom: 20px !important;
+
+    a {
+      color: #707070;
+    }
+
+    p {
+      line-height: 1.5rem;
+    }
+
+    &-location {
+      color: #AEAEAE;
+      font-size: 13px;
+      padding-bottom: 50px;
+    }
+
+    &-profile {
+      padding-bottom: 30px;
+    }
+
+    &-contact {
+      padding-bottom: 40px;
+    }
   }
 }

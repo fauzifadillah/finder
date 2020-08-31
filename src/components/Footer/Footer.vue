@@ -4,11 +4,11 @@
       <div class="col-md">
         <img src="../../assets/footer-logo.png" alt="" />
         <br />
-        <a href="mailto:nano@finder.ac.id">nano@finder.ac.id</a>
-        <p>@finder</p>
+        <a href="mailto:nano@finder.ac.id"><u>nano@finder.ac.id</u></a>
+        <p class="text-grey">@finder</p>
       </div>
       <div class="col-md-auto">
-        <p class="text-right">
+        <p class="footer-address">
           Headquarters <br />
           Kampus Universitas Padjadjaran <br />
           Jalan Raya Bandung-Sumedang KM.21 <br />
@@ -18,10 +18,10 @@
     </div>
     <div class="row">
       <div class="col-md">
-        Copyright 2020 Finder.
+        <p class="text-grey">Copyright 2020 Finder.</p>
       </div>
       <div class="col-md-auto">
-        All right reserved.
+        <p class="text-grey">All right reserved.</p>
       </div>
     </div>
   </div>

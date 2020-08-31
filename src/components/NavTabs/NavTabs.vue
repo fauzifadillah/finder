@@ -12,7 +12,7 @@
         <div class="col-md-4"></div>
       </div>
       <div class="row">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
           <li class="nav-item">
             <a
               class="nav-link active"
@@ -55,15 +55,15 @@
     <div class="row container-content">
       <div class="tab-content" id="pills-tabContent">
         <div
-          class="tab-pane fade show active"
+          class="tab-pane show active"
           id="pills-home"
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
-          <Researches />
+          <Researches/>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane"
           id="pills-profile"
           role="tabpanel"
           aria-labelledby="pills-profile-tab"
@@ -71,7 +71,7 @@
           <Projects />
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane"
           id="pills-contact"
           role="tabpanel"
           aria-labelledby="pills-contact-tab"

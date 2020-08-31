@@ -1,6 +1,10 @@
 .container-navtabs {
   width: 100%;
 
+  h2 {
+    line-height: 3rem;
+  }
+
   .container-header {
     padding: 50px 100px 0px 100px;
     background: grey;
@@ -11,5 +15,44 @@
 
   .row {
     margin: 0;
+  }
+  
+  .nav-pills {
+    a {
+      color: #fff;
+      background: #FF0000;
+      font-weight: bolder;
+    }
+
+    .nav-item {
+      margin-right: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    .nav-link.active, .show>.nav-link {
+      color: #000;
+      background: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-navtabs {
+    .nav-pills {
+      .nav-item {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-navtabs {
+    .nav-pills {
+      .nav-item {
+        width: 120px;
+      }
+    }
   }
 }

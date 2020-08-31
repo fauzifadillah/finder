@@ -1,6 +1,19 @@
 .container-contact {
   background: #fff;
 
+  h1 {
+    font-size: 90px;
+    line-height: 7rem;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  h3 {
+    font-weight: 800;
+  }
+
   .row,
   .col {
     margin: 0 !important;
@@ -19,7 +32,7 @@
     }
   }
   .third-section {
-    margin: 0 100px 300px 100px;
+    margin: 0 100px 400px 100px;
     padding-bottom: 100px;
   }
 }

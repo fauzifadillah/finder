@@ -1,6 +1,6 @@
 <template>
   <div class="container-researches">
-    <section class="header-section mb-5">
+    <section class="header-section">
       <div><h1>Research Explainers</h1></div>
     </section>
     <section class="listresearches-section">
