@@ -6,7 +6,12 @@
     <section class="listteams-section">
       <ListCard title="Teams" />
       <div class="text-center py-5">
-        Load More
+        <button
+          type="button"
+          class="btn btn-light border border-dark pt-3 pb-2 px-5"
+        >
+          <h5 class="font-weight-bold">Load More</h5>
+        </button>
       </div>
     </section>
   </div>

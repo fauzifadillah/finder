@@ -1,7 +1,7 @@
 <template>
   <div class="container-paper">
     <p>
-      <b
+      <b class="text-primary"
         >Panatarani, D. Hidayat, B. M. Wibawa, D. Jumhur, F. Faizal dan I M.
         Joni</b
       >
@@ -10,7 +10,7 @@
       2012.
     </p>
     <p>
-      <b
+      <b class="text-primary"
         >Panatarani, D. Hidayat, B. M. Wibawa, D. Jumhur, F. Faizal dan I M.
         Joni</b
       >
@@ -19,7 +19,7 @@
       2012.
     </p>
     <p>
-      <b
+      <b class="text-primary"
         >Panatarani, D. Hidayat, B. M. Wibawa, D. Jumhur, F. Faizal dan I M.
         Joni</b
       >
@@ -28,7 +28,7 @@
       2012.
     </p>
     <p>
-      <b
+      <b class="text-primary"
         >Panatarani, D. Hidayat, B. M. Wibawa, D. Jumhur, F. Faizal dan I M.
         Joni</b
       >
@@ -37,7 +37,7 @@
       2012.
     </p>
     <p>
-      <b
+      <b class="text-primary"
         >Panatarani, D. Hidayat, B. M. Wibawa, D. Jumhur, F. Faizal dan I M.
         Joni</b
       >

@@ -42,8 +42,7 @@
       </div>
     </div>
     <div>
-      Button
-      <!-- Button -->
+      <button type="button" class="btn btn-dark pt-2 px-5"><h5>Send message</h5></button>
     </div>
   </form>
 </template>
