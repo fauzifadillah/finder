@@ -43,6 +43,13 @@ b {
   font-size: 14px;
 }
 
+.btn-light {
+  &:hover {
+    color: #fff !important;
+    background: #000;
+  }
+}
+
 @media screen and (max-width: 768px) {
 }
 
