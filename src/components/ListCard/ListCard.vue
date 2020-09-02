@@ -24,11 +24,11 @@
     </div>
   </template>
   <template v-else-if="title === 'Researches'">
-    <div class="col pl-0" data-aos="fade-down">
+    <div class="col-12 pl-0" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR PHYSICS</h4>
       <p>Research about education at a glance</p>
     </div>
-    <div>
+    <div class="col-12 p-0">
       <div class="row mb-4">
         <div class="col-md-4 mb-3">
           <Card title="Researches" />
@@ -41,12 +41,12 @@
         </div>
       </div>
     </div>
-    <div class="col pl-0 pt-4" data-aos="fade-down">
+    <div class="col-12 pl-0 pt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR BIOMATERIALS</h4>
       <p>Research about education at a glance</p>
     </div>
-    <div>
-      <div class="row mb-4">
+    <div class="col-12 p-0">
+      <div class="row mb-4 d-flex">
         <div class="col-md-4 mb-3">
           <Card title="Researches" />
         </div>

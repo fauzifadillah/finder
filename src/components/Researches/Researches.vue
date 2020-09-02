@@ -4,7 +4,7 @@
       <div data-aos="zoom-out"><h1>Research Explainers</h1></div>
     </section>
     <section class="listresearches-section">
-      <ListCard title="Researches" />
+      <div class="row"><ListCard title="Researches" /></div>
       <div class="text-center py-5">
         <button
           type="button"

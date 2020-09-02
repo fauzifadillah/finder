@@ -31,14 +31,16 @@
   </template>
   <template v-else-if="title === 'Projects'">
     <div class="row card-projects p-4" data-aos="fade-down">
-      <div class="row card-projects-name">
+      <div class="col-12 p-0 card-projects-name">
         PROJECTS NAME
       </div>
-      <div class="row">
+      <div class="col-12 p-0">
         <img class="card-news-image" src="../../assets/image-1.png" alt="" />
       </div>
       <div class="row">
-        <b class="card-projects-title">Big Data Analytics Living Lab: Better understanding</b>
+        <b class="card-projects-title"
+          >Big Data Analytics Living Lab: Better understanding</b
+        >
       </div>
       <div>
         <p>
@@ -76,17 +78,19 @@
         </div>
       </div>
       <div class="row">
-        <p>“Prestasi Adalah Kemampuan Dikalikan Pekerjaan” Camellia Panatarani,
-        holder to the title of Doctor of Engineering from Hiroshima University,
-        Japan, now works as a lecturer and researcher at the Department of
-        Physics, MIPA Faculty at University of Padjadjaran, Bandung. Through her
-        research, which focuses on Phosphorus (Luminescent Material) commonly
-        used within the energy efficient lighting industry, display industry,
-        and many others, she hopes that Indonesia can produce its own range of
-        phosphorus products using simple methods. The research titled “Synthesis
-        Halophospor on A Simple Solution Method” has been submitted to L’Oréal
-        Indonesia Fellowship For Women In Science of 2008, and was completed in
-        2009.</p>
+        <p>
+          “Prestasi Adalah Kemampuan Dikalikan Pekerjaan” Camellia Panatarani,
+          holder to the title of Doctor of Engineering from Hiroshima
+          University, Japan, now works as a lecturer and researcher at the
+          Department of Physics, MIPA Faculty at University of Padjadjaran,
+          Bandung. Through her research, which focuses on Phosphorus
+          (Luminescent Material) commonly used within the energy efficient
+          lighting industry, display industry, and many others, she hopes that
+          Indonesia can produce its own range of phosphorus products using
+          simple methods. The research titled “Synthesis Halophospor on A Simple
+          Solution Method” has been submitted to L’Oréal Indonesia Fellowship
+          For Women In Science of 2008, and was completed in 2009.
+        </p>
       </div>
     </div>
   </template>

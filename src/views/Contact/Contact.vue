@@ -35,7 +35,7 @@
         <h2 data-aos="zoom-in" class="mb-5">Let us know how we can help you</h2>
       </div>
       <div data-aos="zoom-in">
-        <ContactUs/>
+        <ContactUs />
       </div>
     </section>
     <Footer />

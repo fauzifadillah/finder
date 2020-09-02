@@ -6,7 +6,12 @@
     <section class="listprojects-section">
       <ListCard title="Projects" />
       <div class="text-center py-5">
-        <button type="button" class="btn btn-light border border-dark pt-2 px-5"><h5>Load More</h5></button>
+        <button
+          type="button"
+          class="btn btn-light border border-dark pt-2 px-5"
+        >
+          <h5>Load More</h5>
+        </button>
       </div>
     </section>
   </div>

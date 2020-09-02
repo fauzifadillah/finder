@@ -16,11 +16,11 @@
   .row {
     margin: 0;
   }
-  
+
   .nav-pills {
     a {
       color: #fff;
-      background: #FF0000;
+      background: #ff0000;
       font-weight: bolder;
     }
 
@@ -30,7 +30,8 @@
       text-align: center;
     }
 
-    .nav-link.active, .show>.nav-link {
+    .nav-link.active,
+    .show > .nav-link {
       color: #000;
       background: #fff;
     }
@@ -39,11 +40,10 @@
 
 @media screen and (max-width: 768px) {
   .container-navtabs {
-
     h2 {
       line-height: 2.5rem;
     }
-  
+
     .container-header {
       padding: 50px 50px 0px 50px;
       background: grey;
@@ -59,7 +59,6 @@
 
 @media screen and (max-width: 480px) {
   .container-navtabs {
-
     h2 {
       line-height: 2.5rem;
     }
@@ -67,7 +66,7 @@
     a {
       font-size: 13px;
     }
-  
+
     .container-header {
       padding: 50px 30px 0px 30px;
       background: grey;

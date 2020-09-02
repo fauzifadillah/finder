@@ -60,7 +60,7 @@
           role="tabpanel"
           aria-labelledby="pills-home-tab"
         >
-          <Researches/>
+          <Researches />
         </div>
         <div
           class="tab-pane"
