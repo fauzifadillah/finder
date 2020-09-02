@@ -1,7 +1,7 @@
 <template>
   <div class="container-teams">
     <section class="header-section mb-5">
-      <div><h1>Teams</h1></div>
+      <div data-aos="zoom-out"><h1>Teams</h1></div>
     </section>
     <section class="listteams-section">
       <ListCard title="Teams" />

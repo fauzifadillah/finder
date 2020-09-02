@@ -3,18 +3,20 @@
     <Navbar />
 
     <section class="header-section mb-5">
-      <div><h1>Publications</h1></div>
-      <div><p>This is space for publications hero</p></div>
+      <div data-aos="zoom-out"><h1>Publications</h1></div>
+      <div data-aos="zoom-out"><p>This is space for publications hero</p></div>
     </section>
     <section class="listpaper-section">
-      <ListPaper />
-      <div class="text-center py-5">
-        <button
-          type="button"
-          class="btn btn-light border border-dark pt-3 pb-2 px-5"
-        >
-          <h5 class="font-weight-bold">Load More</h5>
-        </button>
+      <div data-aos="fade-down">
+        <ListPaper />
+        <div class="text-center py-5">
+          <button
+            type="button"
+            class="btn btn-light border border-dark pt-3 pb-2 px-5"
+          >
+            <h5 class="font-weight-bold">Load More</h5>
+          </button>
+        </div>
       </div>
     </section>
 

@@ -57,10 +57,10 @@
     <section class="fifth-section">
       <div class="row" data-aos="fade-up">
         <h2>Intro Storyline</h2>
-        <h3 class="m-5">
+        <h4 class="m-5">
           Menjelaskan what is finder u CoE dan sekilas tentang sejarah sebelum
           Finder. (Timeline).
-        </h3>
+        </h4>
         <img src="../../assets/logo-aneh.png" />
       </div>
     </section>

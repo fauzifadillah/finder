@@ -11,6 +11,16 @@
     color: #707070;
   }
 
+  p {
+    line-height: 1.5rem;
+  }
+
+  .fa {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-left: 15px;
+  }
+
   .text-grey {
     color: #707070;
   }
@@ -20,11 +30,23 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container-footer {
+    padding: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container-footer {
-    
+
     .footer-address {
       text-align: left;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-footer {
+    padding: 30px;
   }
 }

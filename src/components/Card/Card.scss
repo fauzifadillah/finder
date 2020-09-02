@@ -11,8 +11,10 @@
 }
 
 .card {
-  &-news-image {
-    width: 100%;
+  &-news {
+    &-image {
+      width: 100%;
+    }
   }
 
   &-researches {
@@ -20,26 +22,47 @@
     height: 180px;
     border-bottom: 5px solid #ff0000;
 
-    &:after {
-      content: "HUFFTTT";
-      padding: 10px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: scaleY(0);
-      transform-origin: bottom center;
-      background: #ff0000;
-      z-index: 0;
-      transition: transform 0.3s;
+    h5 {
+      color: #ff0000;
     }
 
-    &:hover::after {
-      cursor: pointer;
-      z-index: 0;
-      transform: scaleY(1);
+    a {
+      color: #ff0000;
     }
+
+    &:hover {
+      background: #ff0000;
+      cursor: pointer;
+      transform: scaleY(1);
+      transition: transform 1s;
+      h5 {
+        color: #fff;
+      }
+      a {
+        color: #fff;
+      }
+    }
+
+    // &:after {
+    //   content: "HUFFTTT";
+    //   padding: 10px;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   transform: scaleY(0);
+    //   transform-origin: bottom center;
+    //   background: #ff0000;
+    //   z-index: 0;
+    //   transition: transform 0.3s;
+    // }
+
+    // &:hover::after {
+    //   cursor: pointer;
+    //   z-index: 0;
+    //   transform: scaleY(1);
+    // }
   }
 
   /* Style Card Projects */  
@@ -63,7 +86,28 @@
   &-teams {
     background: #fff;
     border-bottom: 5px solid #ff0000;
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
+
+    h6 {
+      font-size: 11px;
+    }
+
+    &:hover {
+      background: #ff0000;
+      cursor: pointer;
+      transform: scaleY(1);
+      transition: transform 1s;
+      color: #fff;
+      h6 {
+        color: #fff;
+      }
+      h5 {
+        color: #fff;
+      }
+      a {
+        color: #fff;
+      }
+    }
 
     a {
       color: #707070;
@@ -84,6 +128,67 @@
     }
 
     &-contact {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    &-researches {
+      height: 160px;
+      h5 {
+        font-size: 14px;
+      }
+      a {
+        font-size: 14px;
+      }
+      .p-4 {
+        padding: 30px 10px 10px 10px !important;
+      }
+    }
+
+    &-projects {
+      margin-bottom: 20px !important;
+  
+      &-name {
+        color: #AEAEAE;
+        font-size: 13px;
+        padding-bottom: 20px;
+      }
+    
+      &-title {
+        margin: 20px 0 30px 0;
+      }
+    }
+
+    &-teams {
+      h2 {
+        font-size: 24px;
+      }
+      a {
+        font-size: 13px;
+      }
+      &-location {
+        color: #AEAEAE;
+        font-size: 13px;
+        padding-bottom: 30px;
+      }
+  
+      &-profile {
+        padding-bottom: 5px;
+      }
+  
+      &-contact {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    &-news {
       padding-bottom: 40px;
     }
   }

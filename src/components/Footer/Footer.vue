@@ -4,8 +4,16 @@
       <div class="col-md">
         <img src="../../assets/footer-logo.png" alt="" />
         <br />
-        <a href="mailto:nano@finder.ac.id"><u>nano@finder.ac.id</u></a>
-        <p class="text-grey">@finder</p>
+        <div class="row mt-4 mb-2">
+          <span class="mr-2"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <a href="mailto:nano@finder.ac.id"><u>nano@finder.ac.id</u></a>
+        </div>
+        <div class="row">
+          <span class="mr-2"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+          <span><p class="text-grey">
+          @finder
+        </p></span>
+        </div>
       </div>
       <div class="col-md-auto">
         <p class="footer-address">

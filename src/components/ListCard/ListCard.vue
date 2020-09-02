@@ -24,7 +24,7 @@
     </div>
   </template>
   <template v-else-if="title === 'Researches'">
-    <div class="col pl-0">
+    <div class="col pl-0" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR PHYSICS</h4>
       <p>Research about education at a glance</p>
     </div>
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="col pl-0 pt-4">
+    <div class="col pl-0 pt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR BIOMATERIALS</h4>
       <p>Research about education at a glance</p>
     </div>

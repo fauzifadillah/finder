@@ -1,7 +1,7 @@
 <template>
   <div class="container-researches">
     <section class="header-section">
-      <div><h1>Research Explainers</h1></div>
+      <div data-aos="zoom-out"><h1>Research Explainers</h1></div>
     </section>
     <section class="listresearches-section">
       <ListCard title="Researches" />
@@ -14,7 +14,6 @@
         </button>
       </div>
     </section>
-
     <Footer />
   </div>
 </template>

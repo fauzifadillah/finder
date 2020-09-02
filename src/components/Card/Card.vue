@@ -1,32 +1,36 @@
 <template>
   <template v-if="title === 'News'">
-    <div class="row">
-      <img class="card-news-image" src="../../assets/image-1.png" alt="" />
-    </div>
-    <div class="row pt-3">
-      <div class="col-auto pl-0">
-        <img src="../../assets/red-symbol.png" alt="" />
+    <div class="card-news" data-aos="fade-down">
+      <div class="row">
+        <img class="card-news-image" src="../../assets/image-1.png" alt="" />
       </div>
-      <div class="col">
-        <p class="pt-1">News Category</p>
+      <div class="row pt-3">
+        <div class="col-auto pl-0">
+          <img src="../../assets/red-symbol.png" alt="" />
+        </div>
+        <div class="col">
+          <p class="pt-1">News Category</p>
+        </div>
       </div>
-    </div>
-    <div>
-      <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
+      <div>
+        <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
+      </div>
     </div>
   </template>
   <template v-else-if="title === 'Researches'">
-    <div class="row card-researches p-4">
-      <div class="col-12 mb-5">
-        <h5>Provisional ballots</h5>
-      </div>
-      <div class="col-12">
-        <a href="">Learn more</a>
+    <div class="card-researches" data-aos="fade-down">
+      <div class="row p-4">
+        <div class="col-12 mb-5">
+          <h5>Provisional ballots</h5>
+        </div>
+        <div class="col-12">
+          <a href=""><u>Learn more</u></a>
+        </div>
       </div>
     </div>
   </template>
   <template v-else-if="title === 'Projects'">
-    <div class="row card-projects p-4">
+    <div class="row card-projects p-4" data-aos="fade-down">
       <div class="row card-projects-name">
         PROJECTS NAME
       </div>
@@ -45,13 +49,13 @@
     </div>
   </template>
   <template v-else-if="title === 'Teams'">
-    <div class="card-teams p-4">
+    <div class="card-teams p-4" data-aos="fade-down">
       <div class="row card-teams-location">
         <div class="col">
-          BANDUNG, ID
+          <h6>BANDUNG, ID</h6>
         </div>
         <div class="col-auto ml-auto">
-          PADJADJARAN UNIVERSITY
+          <h6>PADJADJARAN UNIVERSITY</h6>
         </div>
       </div>
       <div class="row card-teams-profile">

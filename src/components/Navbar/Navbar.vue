@@ -1,14 +1,14 @@
 <template>
   <div class="container-navbar">
     <div class="row">
-      <div class="col">
+      <div class="col" data-aos="flip-up">
         <router-link :to="{ name: 'home' }">
           <img src="../../assets/logo.png" />
         </router-link>
       </div>
-      <div class="col-auto ml-auto burger-navbar">
-        <!-- <div class="visible"></div>
-        <div class="visible"></div> -->
+      <!-- <div class="col-auto ml-auto burger-navbar">
+        <div class="visible"></div>
+        <div class="visible"></div>
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
           <div class="hamburger"><div></div></div>
@@ -16,6 +16,7 @@
             <div>
               <div>
                 <ul>
+                  <li><a href="/"><h1>Home</h1></a></li>
                   <li><a href="/guides"><h1>Guides</h1></a></li>
                   <li><a href="/publications"><h1>Publication</h1></a></li>
                   <li><a href="/contact"><h1>Contact</h1></a></li>
@@ -25,7 +26,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

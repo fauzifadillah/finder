@@ -2,14 +2,42 @@
   background: #f3f3f3;
   padding-top: 75px;
 
-  .navtabs-section {
-  }
-
   .header-section {
     padding: 0 100px 70px 100px;
   }
 
   .listresearches-section {
     margin: 0 100px 353px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-researches {
+    padding-top: 55px;
+  
+    .header-section {
+      padding: 0 50px 30px 50px;
+    }
+  
+    .listresearches-section {
+      margin: 0 50px 353px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-researches {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .header-section {
+      padding: 0 30px 25px 30px;
+    }
+  
+    .listresearches-section {
+      margin: 0 30px 353px 30px;
+    }
   }
 }
