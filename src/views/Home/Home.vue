@@ -68,7 +68,7 @@
     <section class="sixth-section">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-8 ml-md-auto p-0" data-aos="fade-left">
+        <div class="col-md-8 ml-md-auto p-0" data-aos="fade-up">
           <img class="img-section" src="../../assets/introduction.png" />
         </div>
       </div>

@@ -6,12 +6,10 @@
           <img src="../../assets/logo.png" />
         </router-link>
       </div>
-      <!-- <div class="col-auto ml-auto burger-navbar">
-        <div class="visible"></div>
-        <div class="visible"></div>
+      <div class="col-auto mr-4 pr-4 ml-auto burger-navbar">      
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
-          <div class="hamburger"><div></div></div>
+          <div class="hamburger ml-auto"><div></div></div>
           <div class="menu">
             <div>
               <div>
@@ -26,19 +24,15 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: "Navbar",
-  // components: {
-  //   HelloWorld
-  // }
+  name: "Navbar"
 };
 </script>
 
