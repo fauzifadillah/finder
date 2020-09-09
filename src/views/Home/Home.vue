@@ -14,7 +14,7 @@
     <section class="second-section">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-auto ml-md-auto p-0" data-aos="fade-left">
+        <div class="col-auto ml-md-auto p-0" data-aos="zoom-in-up">
           <img class="img-section" src="../../assets/image-1.png" />
         </div>
       </div>
@@ -23,12 +23,12 @@
     <section class="row third-section">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="pr-4" data-aos="fade-right">
+          <h2 class="pr-4" data-aos="zoom-in-down">
             Strategic design and engineering for global leading brands
           </h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
-        <div class="col-md-6 pl-4" data-aos="fade-left">
+        <div class="col-md-6 pl-4" data-aos="zoom-in-up">
           <h5>
             Menjelaskan what is finder u CoE dan sekilas tentang sejarahnya. (At
             a glance).

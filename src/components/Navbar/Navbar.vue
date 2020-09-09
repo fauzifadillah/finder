@@ -9,16 +9,24 @@
       <div class="col-auto mr-4 pr-4 ml-auto burger-navbar">      
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
-          <div class="hamburger ml-auto"><div></div></div>
+          <div class="hamburger ml-auto">
+            <div>
+            </div>
+          </div>
+          <!-- <div class="new-hamburger ml-auto">
+            <div></div>
+          </div> -->
           <div class="menu">
             <div>
               <div>
-                <ul>
-                  <li><a href="/"><h1>Home</h1></a></li>
-                  <li><a href="/guides"><h1>Guides</h1></a></li>
-                  <li><a href="/publications"><h1>Publication</h1></a></li>
-                  <li><a href="/contact"><h1>Contact</h1></a></li>
-                  <li><a href="/news"><h1>News</h1></a></li>
+                <ul class="pl-0">
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li><a href="/guides">Guides</a></li>
+                  <li><a href="/publications">Publications</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="/news">News</a></li>
                 </ul>
               </div>
             </div>
