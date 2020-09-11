@@ -207,7 +207,6 @@
     max-width: 90vw;
     max-height: 100vh;
     opacity: 0;
-    // transition: opacity 0.4s ease;
   }
 
   .menu-wrap .menu > div > div > ul > li {
@@ -239,6 +238,18 @@
     .menu-wrap .hamburger {
       padding: 1rem 2rem 1rem 1rem;
     }
+
+    .menu-wrap .menu > div {
+      padding-right: 30px;
+    }
+
+    .menu-wrap .menu > div > div > ul > li {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 0 0.5rem;
+      opacity: 0;
+      transition: width 3s;
+    }
   }
 }
 
@@ -256,6 +267,14 @@
 
     .menu-wrap .menu > div > div > ul > li {
       font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .container-navbar {
+    .menu-wrap .menu > div > div > ul > li {
+      font-size: 1.5rem;
     }
   }
 }
