@@ -140,7 +140,7 @@
 
   .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: 0.75s;
+    transition-duration: 1.5s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -150,27 +150,27 @@
 
   .menu-wrap .toggler:checked ~ .menu > div > div > ul > li:nth-child(1) {
     opacity: 1;
-    transition: opacity 0.5s ease 0.5s;
+    transition: opacity 1s ease 1s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div > ul > li:nth-child(2) {
     opacity: 1;
-    transition: opacity 1.0s ease 1.0s;
+    transition: opacity 1.5s ease 1.5s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div > ul > li:nth-child(3) {
     opacity: 1;
-    transition: opacity 1.2s ease 1.2s;
+    transition: opacity 1.7s ease 1.7s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div > ul > li:nth-child(4) {
     opacity: 1;
-    transition: opacity 1.4s ease 1.4s;
+    transition: opacity 1.9s ease 1.9s;
   }
 
   .menu-wrap .toggler:checked ~ .menu > div > div > ul > li:nth-child(5) {
     opacity: 1;
-    transition: opacity 1.6s ease 1.6s;
+    transition: opacity 2s ease 2s;
   }
 
   .menu-wrap .menu {
@@ -212,7 +212,7 @@
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     padding: 0.5rem;
     opacity: 0;

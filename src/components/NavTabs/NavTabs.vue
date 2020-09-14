@@ -22,8 +22,7 @@
               role="tab"
               aria-controls="pills-home"
               aria-selected="true"
-              >EXPLAINERS</a
-            >
+            >EXPLAINERS</a>
           </li>
           <li class="nav-item">
             <a
@@ -34,8 +33,7 @@
               role="tab"
               aria-controls="pills-profile"
               aria-selected="false"
-              >PROJECTS</a
-            >
+            >PROJECTS</a>
           </li>
           <li class="nav-item">
             <a
@@ -46,8 +44,7 @@
               role="tab"
               aria-controls="pills-contact"
               aria-selected="false"
-              >TEAMS</a
-            >
+            >TEAMS</a>
           </li>
         </ul>
       </div>
