@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-auto ml-md-auto p-0" data-aos="zoom-in-up" data-aos-duration="2500">
-          <img class="img-section" src="../../assets/image-1.png" />
+          <img class="img-section" v-bind:src="'http://188.166.246.154' + home.Image_1[0].url" />
         </div>
       </div>
     </section>
@@ -23,26 +23,11 @@
     <section class="row third-section">
       <div class="row">
         <div class="col-md-6">
-          <h2
-            class="pr-4"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >Strategic design and engineering for global leading brands</h2>
+          <h2 class="pr-4" data-aos="fade-right" data-aos-duration="2000">{{ home.Anchor_1_title }}</h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
         <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
-          <h5>
-            Menjelaskan what is finder u CoE dan sekilas tentang sejarahnya. (At
-            a glance).
-          </h5>
-          <h5>
-            Menjelaskan what is finder u CoE dan sekilas tentang sejarahnya. (At
-            a glance).
-          </h5>
-          <h5>
-            Menjelaskan what is finder u CoE dan sekilas tentang sejarahnya. (At
-            a glance).
-          </h5>
+          <h5>{{ home.Anchor_1_desc}}</h5>
         </div>
       </div>
     </section>
@@ -50,7 +35,7 @@
     <section class="fourth-section">
       <div class="row">
         <div class="col-auto mr-md-auto p-0" data-aos="fade-right" data-aos-duration="2500">
-          <img class="img-section" src="../../assets/image-1.png" />
+          <img class="img-section" v-bind:src="'http://188.166.246.154' + home.Image_2[0].url" />
         </div>
         <div class="col-md-4"></div>
       </div>
@@ -58,11 +43,8 @@
 
     <section class="fifth-section">
       <div class="row">
-        <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">Intro Storyline</h2>
-        <h4 class="m-5" data-aos="fade-in" data-aos-duration="3000">
-          Menjelaskan what is finder u CoE dan sekilas tentang sejarah sebelum
-          Finder. (Timeline).
-        </h4>
+        <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">{{ home.Anchor_2_title}}</h2>
+        <h4 class="m-5" data-aos="fade-in" data-aos-duration="3000">{{ home.Anchor_2_desc}}</h4>
         <div class="col-12 p-0">
           <img src="../../assets/logo-aneh.png" />
         </div>
@@ -73,22 +55,19 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-8 ml-md-auto p-0" data-aos="fade-up" data-aos-duration="1500">
-          <img class="img-section" src="../../assets/introduction.png" />
+          <img class="img-section" v-bind:src="'http://188.166.246.154' + home.Image_3[0].url" />
         </div>
       </div>
     </section>
 
     <section class="seventh-section">
       <div class="row">
-        <h2
-          data-aos="fade-in"
-          data-aos-duration="3000"
-        >Our ideals remain the same – our inspiration is always nanotechnology.</h2>
+        <h2 data-aos="fade-in" data-aos-duration="3000">{{ home.Anchor_3_title}}</h2>
       </div>
     </section>
 
     <section class="eighth-section">
-      <img class="img-section" src="../../assets/image-1.png" />
+      <img class="img-section" v-bind:src="'http://188.166.246.154' + home.Image_4[0].url" />
     </section>
 
     <Footer />
