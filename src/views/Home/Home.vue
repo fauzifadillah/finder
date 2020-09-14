@@ -1,5 +1,5 @@
 <template>
-  <div class="container-home" v-for="home in homes" :key="homes.id">
+  <div class="container-home" v-for="home in homes" :key="home.id">
     <Navbar />
 
     <section class="row first-section">
