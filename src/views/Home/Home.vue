@@ -6,9 +6,9 @@
       <div class="row align-items-center">
         <div class="col-md-12">
           <h1>
-            <span ref="h1" class="hidetext">{{ home.Hero }}</span>
+            <span ref="hero" class="hidetext">{{ home.Hero }}</span>
           </h1>
-          <h3 data-aos="fade-in" data-aos-duration="3000">
+          <h3 ref="tagline" data-aos="fade-in" data-aos-duration="3000">
             {{ home.Tagline }}
           </h3>
         </div>
@@ -19,6 +19,7 @@
       <div class="row">
         <div class="col-md-4"></div>
         <div
+          ref="image1"
           class="col-auto ml-md-auto p-0"
           data-aos="zoom-in-up"
           data-aos-duration="2500"
@@ -34,8 +35,10 @@
     <section class="row third-section">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="pr-4" data-aos="fade-right" data-aos-duration="2000">
-            {{ home.Anchor_1_title }}
+          <h2 class="pr-4">
+            <span ref="anchor1" class="hidetext">{{
+              home.Anchor_1_title
+            }}</span>
           </h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
@@ -135,13 +138,21 @@ export default {
     // GSAP Initialization
     console.log(this.$refs);
 
-    const tl = new TimelineMax({});
+    const tl = new TimelineMax();
     tl.staggerFrom(
-      this.$refs.h1,
-      2.5,
+      this.$refs.hero,
+      3.5,
       { y: "100%", ease: Power4.easeOut },
       1.15
     );
+    tl.fromTo(
+      this.$refs.anchor1,
+      3.5,
+      { y: "100%", ease: Power4.easeOut },
+      { y: "10%", ease: Power4.easeOut },
+      "-=3.5"
+    );
+    tl.from(this.$refs.tagline, 2.5, { y: "-15%", ease: Power4.fadeIn }, 0.5);
     tl.play();
   },
   async mounted() {
