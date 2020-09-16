@@ -23,7 +23,7 @@
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="/guides">Guides</a>
+                    <a href="/guides">Research</a>
                   </li>
                   <li>
                     <a href="/publications">Publications</a>
