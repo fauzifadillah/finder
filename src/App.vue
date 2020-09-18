@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div :class="{ preloader: preloader }" id="load-screen"></div>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
     <router-view />
@@ -12,7 +13,15 @@ import { TweenMax } from "gsap";
 
 export default {
   name: "App",
+  data() {
+    return {
+      preloader: true,
+    };
+  },
   mounted() {
+    setTimeout(() => {
+      this.preloader = false;
+    }, 1000);
     // CURSOR
     var cursor = $(".cursor"),
       follower = $(".cursor-follower");
@@ -23,9 +32,9 @@ export default {
     var mouseX = 0,
       mouseY = 0;
 
-    TweenMax.to({}, 0.016, {
+    TweenMax.to({}, 0.006, {
       repeat: -1,
-      onRepeat: function() {
+      onRepeat: function () {
         posX += (mouseX - posX) / 9;
         posY += (mouseY - posY) / 9;
 
@@ -45,9 +54,19 @@ export default {
       },
     });
 
-    $(document).on("mousemove", function(e) {
+    $(document).on("mousemove", function (e) {
       mouseX = e.clientX;
       mouseY = e.clientY;
+    });
+    // yellow circle
+    $(document.querySelector(".hidetext")).on("mouseenter", function () {
+      cursor.addClass("active");
+      console.log("active");
+      follower.addClass("active");
+    });
+    $(document.querySelector(".hidetext")).on("mouseleave", function () {
+      cursor.removeClass("active");
+      follower.removeClass("active");
     });
   },
 };

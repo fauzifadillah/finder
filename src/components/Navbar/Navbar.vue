@@ -1,7 +1,7 @@
 <template>
   <div class="container-navbar">
     <div class="row">
-      <div class="col" data-aos="flip-up">
+      <div class="col" data-aos="flip-up" data-aos-duration="1000">
         <router-link :to="{ name: 'home' }">
           <img src="../../assets/logo.png" />
         </router-link>
