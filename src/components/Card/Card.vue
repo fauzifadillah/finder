@@ -3,17 +3,17 @@
     <template v-if="title === 'News'">
       <div class="card-news" data-aos="fade-down">
         <div class="row">
-          <img class="card-news-image" src="../../assets/image-1.png" alt="" />
+          <img class="card-news-image" src="../../assets/image-1.png" alt />
         </div>
-        <div class="row pt-3">
+        <!-- <div class="row pt-3">
           <div class="col-auto pl-0">
-            <img src="../../assets/red-symbol.png" alt="" />
+            <img src="../../assets/red-symbol.png" alt />
           </div>
           <div class="col">
             <p class="pt-1">News Category</p>
           </div>
-        </div>
-        <div>
+        </div>-->
+        <div class="mt-2">
           <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
         </div>
       </div>
@@ -25,7 +25,9 @@
             <h5>Provisional ballots</h5>
           </div>
           <div class="col-12 mb-3">
-            <a href=""><u>Learn more</u></a>
+            <a href>
+              <u>Learn more</u>
+            </a>
           </div>
         </div>
       </div>
@@ -37,16 +39,10 @@
             <h6>PROJECTS NAME</h6>
           </div>
           <div class="col-12 p-0">
-            <img
-              class="card-news-image"
-              src="../../assets/image-1.png"
-              alt=""
-            />
+            <img class="card-news-image" src="../../assets/image-1.png" alt />
           </div>
           <div class="row">
-            <b class="card-projects-title"
-              >Big Data Analytics Living Lab: Better understanding</b
-            >
+            <b class="card-projects-title">Big Data Analytics Living Lab: Better understanding</b>
           </div>
           <div>
             <p>
@@ -74,15 +70,19 @@
               <p>Professor Nanotechnology</p>
             </div>
             <div class="col-auto ml-auto">
-              <img src="../../assets/author-image.png" alt="" />
+              <img src="../../assets/author-image.png" alt />
             </div>
           </div>
           <div class="row card-teams-contact">
             <div class="col-12 pl-0">
-              <a href=""><u>Email</u></a>
+              <a href>
+                <u>Email</u>
+              </a>
             </div>
             <div class="col-12 pl-0">
-              <a href=""><u>Website</u></a>
+              <a href>
+                <u>Website</u>
+              </a>
             </div>
           </div>
           <div class="row">

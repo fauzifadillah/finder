@@ -3,7 +3,7 @@
     <div class="container-header">
       <div class="row">
         <div class="col-lg-8 pl-0">
-          <h2 data-aos="zoom-out" class="text-white mb-5">
+          <h2 data-aos="fade-out" data-aos-duration="3000" class="text-white mb-5">
             Using data-driven scientific analysis, we strive to better
             understand how functional in the powder. Here we provide a guide to
             core research
@@ -11,7 +11,7 @@
         </div>
         <div class="col-lg-4"></div>
       </div>
-      <div class="row" data-aos="fade-down">
+      <div class="row" data-aos="fade-down" data-aos-duration="1000">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
           <li class="nav-item">
             <a
@@ -22,8 +22,7 @@
               role="tab"
               aria-controls="pills-home"
               aria-selected="true"
-              >EXPLAINERS</a
-            >
+            >EXPLAINERS</a>
           </li>
           <li class="nav-item">
             <a
@@ -34,8 +33,7 @@
               role="tab"
               aria-controls="pills-profile"
               aria-selected="false"
-              >PROJECTS</a
-            >
+            >PROJECTS</a>
           </li>
           <li class="nav-item">
             <a
@@ -46,8 +44,7 @@
               role="tab"
               aria-controls="pills-contact"
               aria-selected="false"
-              >TEAMS</a
-            >
+            >TEAMS</a>
           </li>
         </ul>
       </div>

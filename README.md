@@ -1,5 +1,8 @@
 # Finder Joy
 
+## NOTE:
+DEVELOPMENT IP: http://188.166.246.154:8080/
+
 ## Project setup
 ```
 npm install

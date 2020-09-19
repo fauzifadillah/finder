@@ -1,12 +1,18 @@
 .container-home {
   background: #fff;
+  .hidetext {
+    display: block;
+    padding-bottom: 12px;
+  }
 
   h1 {
+    overflow: hidden;
     font-size: 70px;
     line-height: 4rem;
   }
 
   h2 {
+    overflow: hidden;
     font-size: 46px;
     line-height: 4rem;
   }
