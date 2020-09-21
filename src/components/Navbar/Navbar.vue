@@ -12,9 +12,6 @@
           <div class="hamburger ml-auto">
             <div></div>
           </div>
-          <!-- <div class="new-hamburger ml-auto">
-            <div></div>
-          </div>-->
           <div class="menu">
             <div>
               <div>
@@ -23,10 +20,13 @@
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="/guides">Research</a>
+                    <a href="/researches">Researches</a>
                   </li>
                   <li>
                     <a href="/publications">Publications</a>
+                  </li>
+                  <li>
+                    <a href="/services">Services</a>
                   </li>
                   <li>
                     <a href="/contact">Contact</a>

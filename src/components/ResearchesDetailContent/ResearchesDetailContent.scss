@@ -1,0 +1,21 @@
+.container-researchesdetailcontent {
+  .researches-image {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-researchesdetailcontent {
+    .researches-image {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-researchesdetailcontent {
+    .researches-image {
+      width: 100%;
+    }
+  }
+}

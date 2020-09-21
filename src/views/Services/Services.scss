@@ -1,0 +1,35 @@
+.container-services {
+  background: #f3f3f3;
+
+  .header-section {
+    padding: 0 100px 0 100px;
+  }
+
+  .listcard-section {
+    margin: 0 100px 400px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-services {
+    .header-section {
+      padding: 0 50px 0 50px;
+    }
+
+    .listcard-section {
+      margin: 0 50px 400px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-services {
+    .header-section {
+      padding: 0 30px 0 30px;
+    }
+
+    .listcard-section {
+      margin: 0 30px 400px 30px;
+    }
+  }
+}

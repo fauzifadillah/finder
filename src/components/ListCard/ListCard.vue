@@ -23,7 +23,7 @@
       </div>
     </div>
   </template>
-  <template v-else-if="title === 'Researches'">
+  <template v-else-if="title === 'Explainers'">
     <div class="col-12 pl-0" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR PHYSICS</h4>
       <p>Research about education at a glance</p>
@@ -31,13 +31,13 @@
     <div class="col-12 p-0">
       <div class="row mb-4">
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
       </div>
     </div>
@@ -48,13 +48,13 @@
     <div class="col-12 p-0">
       <div class="row mb-4 d-flex">
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
         <div class="col-md-4 mb-3">
-          <Card title="Researches" />
+          <Card title="Explainers" />
         </div>
       </div>
     </div>
@@ -81,6 +81,47 @@
         <Card title="Teams" />
         <Card title="Teams" />
       </div>
+    </div>
+  </template>
+  <template v-else-if="title === 'Services'">
+    <div class="col-12 pl-0" data-aos="fade-down">
+      <h4 class="font-weight-bold">RnD Services</h4>
+      <p>Research about education at a glance</p>
+    </div>
+    <div class="col-12 mt-4 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 pl-0 mt-4" data-aos="fade-down">
+      <h4 class="font-weight-bold">Analysis</h4>
+      <p>Research about education at a glance</p>
+    </div>
+    <div class="col-12 mt-4 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 pl-0 mt-4" data-aos="fade-down">
+      <h4 class="font-weight-bold">Journal Services</h4>
+      <p>Research about education at a glance</p>
+    </div>
+    <div class="col-12 mt-4 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
+    </div>
+    <div class="col-12 mt-2 p-0">
+      <Card title="Services" />
     </div>
   </template>
 </template>

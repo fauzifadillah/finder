@@ -2,32 +2,36 @@
   <div class="container-card">
     <template v-if="title === 'News'">
       <div class="card-news" data-aos="fade-down">
-        <div class="row">
-          <img class="card-news-image" src="../../assets/image-1.png" alt />
-        </div>
-        <!-- <div class="row pt-3">
-          <div class="col-auto pl-0">
-            <img src="../../assets/red-symbol.png" alt />
+        <router-link :to="{ path: '/news/detail' }">
+          <div class="row">
+            <img class="card-news-image" src="../../assets/image-1.png" alt />
           </div>
-          <div class="col">
-            <p class="pt-1">News Category</p>
+          <!-- <div class="row pt-3">
+            <div class="col-auto pl-0">
+              <img src="../../assets/red-symbol.png" alt />
+            </div>
+            <div class="col">
+              <p class="pt-1">News Category</p>
+            </div>
+          </div> -->
+          <div class="mt-2">
+            <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
           </div>
-        </div>-->
-        <div class="mt-2">
-          <b>NanoMag Print-g a new generation Magnetic Beads Covid-19</b>
-        </div>
+        </router-link>
       </div>
     </template>
-    <template v-else-if="title === 'Researches'">
-      <div class="card-researches" data-aos="fade-down">
+    <template v-else-if="title === 'Explainers'">
+      <div class="card-explainers" data-aos="fade-down">
         <div class="row hover-tb p-4">
           <div class="col-12 mb-5">
             <h5>Provisional ballots</h5>
           </div>
           <div class="col-12 mb-3">
-            <a href>
-              <u>Learn more</u>
-            </a>
+            <router-link :to="{ path: '/researches/detail' }">
+              <a href>
+                <u>Learn more</u>
+              </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -42,7 +46,9 @@
             <img class="card-news-image" src="../../assets/image-1.png" alt />
           </div>
           <div class="row">
-            <b class="card-projects-title">Big Data Analytics Living Lab: Better understanding</b>
+            <b class="card-projects-title"
+              >Big Data Analytics Living Lab: Better understanding</b
+            >
           </div>
           <div>
             <p>
@@ -100,6 +106,20 @@
               submitted to L’Oréal Indonesia Fellowship For Women In Science of
               2008, and was completed in 2009.
             </p>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template v-else-if="title === 'Services'">
+      <div class="card-services" data-aos="fade-down">
+        <div class="row hover-tb p-4">
+          <div class="col-12 mb-5">
+            <h5>Provisional ballots</h5>
+          </div>
+          <div class="col-12 mb-3">
+            <a href>
+              <u>Learn more</u>
+            </a>
           </div>
         </div>
       </div>

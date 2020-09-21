@@ -1,0 +1,21 @@
+.container-newsdetailcontent {
+  .news-image {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-newsdetailcontent {
+    .news-image {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-newsdetailcontent {
+    .news-image {
+      width: 100%;
+    }
+  }
+}

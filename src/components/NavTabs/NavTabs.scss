@@ -8,6 +8,11 @@
   .container-header {
     padding: 50px 100px 0px 100px;
     background: grey;
+
+    &-red {
+      padding: 30px 100px 0px 100px;
+      background: #ff0000;
+    }
   }
 
   .container-content {
@@ -47,6 +52,11 @@
     .container-header {
       padding: 50px 50px 0px 50px;
       background: grey;
+
+      &-red {
+        padding: 40px 50px 0px 50px;
+        background: #ff0000;
+      }
     }
 
     .nav-pills {
@@ -70,6 +80,11 @@
     .container-header {
       padding: 50px 30px 0px 30px;
       background: grey;
+
+      &-red {
+        padding: 40px 30px 0px 30px;
+        background: #ff0000;
+      }
     }
 
     .nav-pills {

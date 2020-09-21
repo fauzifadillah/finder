@@ -1,7 +1,7 @@
 <template>
-  <div class="container-guides">
+  <div class="container-researches">
     <Navbar />
-    <NavTabs />
+    <NavTabs title="Researches" />
     <Footer />
   </div>
 </template>
@@ -12,15 +12,16 @@ import NavTabs from "@/components/NavTabs/NavTabs";
 import Footer from "@/components/Footer/Footer";
 
 export default {
-  name: "Guides",
+  name: "Researches",
   components: {
     Navbar,
     Footer,
     NavTabs,
   },
+  props: ["title"],
 };
 </script>
 
 <style lang="scss" scoped>
-@import "Guides.scss";
+@import "Researches.scss";
 </style>
