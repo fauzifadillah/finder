@@ -23,6 +23,7 @@
       </div>
     </div>
   </template>
+  <!-- Explainers -->
   <template v-else-if="title === 'Explainers'">
     <div class="col-12 pl-0" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR PHYSICS</h4>
@@ -62,7 +63,7 @@
                 <div class="col-12 mb-3">
                   <router-link
                     :to="{
-                      path: '/researches/detail',
+                      path: `/researches/detail/${explainer.id}`,
                       params: { ex: explainers },
                     }"
                   >
@@ -133,6 +134,7 @@
     <div class="col-12 pl-0 mt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">Journal Services</h4>
       <p>Research about education at a glance</p>
+      
     </div>
     <div class="col-12 mt-4 p-0">
       <Card title="Services" />
@@ -154,26 +156,31 @@ export default {
   components: {
     Card,
   },
-  props: ["title"],
+  props: {
+    title: { type: String, default: '' },
+    // passedItems: { type: Array },
+    // explainerId: { type: Number, default: 0 }
+  },
   data() {
     return {
       explainers: [],
-      nav: [],
+      // nav: [],
       error: null,
+      contentId: 0,
     };
   },
   async beforeMount() {
     try {
-      const response = await axios.get(
-        "https://cms.finder.ac.id/research-explainers"
-      );
+      const response = await axios
+        .get("https://cms.finder.ac.id/research-explainers")
+
       this.explainers = response.data;
       // const response_nav = await axios.get(
       //   "https://cms.finder.ac.id/navigation-menus"
       // );
       // this.nav = response_nav.data;
       // console.log(response_nav);
-      console.log(this.explainers[0].title);
+      // console.log(this.explainers[0].title);
     } catch (error) {
       this.error = error;
     }

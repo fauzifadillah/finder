@@ -7,7 +7,9 @@
     </section>
     <section class="listexplainers-section">
       <div class="row mx-0">
-        <ListCard title="Explainers" />
+        <ListCard 
+          title="Explainers"
+        />
       </div>
       <div class="text-center py-5">
         <button
@@ -30,7 +32,7 @@ export default {
   components: {
     ListCard,
   },
-  props: ["title"],
+  // props: ["title"],
 };
 </script>
 

@@ -38,25 +38,27 @@
     </template>
     <template v-else-if="title === 'Projects'">
       <div class="row card-projects" data-aos="fade-down">
-        <div class="hover-tb p-4">
-          <div class="col-12 p-0 card-projects-name">
-            <h6>PROJECTS NAME</h6>
+        <router-link :to="{ path: '/researches/detail' }">
+          <div class="hover-tb p-4">
+            <div class="col-12 p-0 card-projects-name">
+              <h6>PROJECTS NAME</h6>
+            </div>
+            <div class="col-12 p-0">
+              <img class="card-news-image" src="../../assets/image-1.png" alt />
+            </div>
+            <div class="row">
+              <b class="card-projects-title"
+                >Big Data Analytics Living Lab: Better understanding</b
+              >
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor ist amet lorem ipsum dolor ist amet Lorem ipsum
+                dolor ist amet lorem ipsum dolor ist amet
+              </p>
+            </div>
           </div>
-          <div class="col-12 p-0">
-            <img class="card-news-image" src="../../assets/image-1.png" alt />
-          </div>
-          <div class="row">
-            <b class="card-projects-title"
-              >Big Data Analytics Living Lab: Better understanding</b
-            >
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor ist amet lorem ipsum dolor ist amet Lorem ipsum
-              dolor ist amet lorem ipsum dolor ist amet
-            </p>
-          </div>
-        </div>
+        </router-link>
       </div>
     </template>
     <template v-else-if="title === 'Teams'">

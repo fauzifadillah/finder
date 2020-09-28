@@ -30,9 +30,8 @@ const router = createRouter({
     },
     {
       name: "researchesDetail",
-      path: "/researches/detail",
+      path: "/researches/detail/:id",
       component: ResearchesDetail,
-      props: true,
     },
     {
       name: "news",
