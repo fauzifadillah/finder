@@ -47,14 +47,34 @@
     </div>
     <div class="col-12 p-0">
       <div class="row mb-4 d-flex">
-        <div class="col-md-4 mb-3">
-          <Card title="Explainers" />
-        </div>
-        <div class="col-md-4 mb-3">
-          <Card title="Explainers" />
-        </div>
-        <div class="col-md-4 mb-3">
-          <Card title="Explainers" />
+        <div
+          class="col-md-4 mb-3"
+          v-for="explainer in explainers"
+          :key="explainer.id"
+        >
+          <!--  -->
+          <div class="container-card">
+            <div class="card-explainers" data-aos="fade-down">
+              <div class="row hover-tb p-4">
+                <div class="col-12 mb-5">
+                  <h5>{{ explainer.title }}</h5>
+                </div>
+                <div class="col-12 mb-3">
+                  <router-link
+                    :to="{
+                      path: '/researches/detail',
+                      params: { ex: explainers },
+                    }"
+                  >
+                    <a href>
+                      <u>Learn more</u>
+                    </a>
+                  </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
         </div>
       </div>
     </div>
@@ -128,16 +148,40 @@
 
 <script>
 import Card from "../Card/Card";
-
+import axios from "axios";
 export default {
   name: "ListCard",
   components: {
     Card,
   },
   props: ["title"],
+  data() {
+    return {
+      explainers: [],
+      nav: [],
+      error: null,
+    };
+  },
+  async beforeMount() {
+    try {
+      const response = await axios.get(
+        "https://cms.finder.ac.id/research-explainers"
+      );
+      this.explainers = response.data;
+      // const response_nav = await axios.get(
+      //   "https://cms.finder.ac.id/navigation-menus"
+      // );
+      // this.nav = response_nav.data;
+      // console.log(response_nav);
+      console.log(this.explainers[0].title);
+    } catch (error) {
+      this.error = error;
+    }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "ListCard.scss";
+@import "../Card/Card.scss";
 </style>

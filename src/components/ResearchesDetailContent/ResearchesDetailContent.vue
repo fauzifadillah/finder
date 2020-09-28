@@ -1,10 +1,6 @@
 <template>
   <div class="container-researchesdetailcontent">
-    <p>
-      Provisional ballots are intended to provide fail-safe protection for
-      voters when there are questions about their registration status on
-      Election Day.
-    </p>
+    <p>{{ asd }} {{ ex }}</p>
     <p>
       Since the Help America Vote Act (HAVA) became law in 2002, all states have
       been required to use provisional ballots. The only exception is states
@@ -49,6 +45,17 @@
 <script>
 export default {
   name: "ResearchesDetailContent",
+  props: ["explainer"],
+  data() {
+    return {
+      asd: [],
+    };
+  },
+  mounted() {
+    if (this.ex) {
+      this.asd = this.ex;
+    }
+  },
 };
 </script>
 
