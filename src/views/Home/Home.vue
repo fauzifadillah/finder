@@ -8,7 +8,9 @@
           <h1>
             <span ref="hero" class="hidetext">{{ home.Hero }}</span>
           </h1>
-          <h3 ref="tagline" data-aos="fade-in" data-aos-duration="3000">{{ home.Tagline }}</h3>
+          <h3 ref="tagline" data-aos="fade-in" data-aos-duration="3000">
+            {{ home.Tagline }}
+          </h3>
         </div>
       </div>
     </section>
@@ -35,7 +37,9 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="pr-4">
-            <span ref="anchor1" class="hidetext">{{ home.Anchor_1_title }}</span>
+            <span ref="anchor1" class="hidetext">{{
+              home.Anchor_1_title
+            }}</span>
           </h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
@@ -47,8 +51,15 @@
 
     <section class="fourth-section">
       <div class="row">
-        <div class="col-auto mr-md-auto p-0" data-aos="fade-right" data-aos-duration="2500">
-          <img class="img-section" v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].url" />
+        <div
+          class="col-auto mr-md-auto p-0"
+          data-aos="fade-right"
+          data-aos-duration="2500"
+        >
+          <img
+            class="img-section"
+            v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].url"
+          />
         </div>
         <div class="col-md-4"></div>
       </div>
@@ -56,12 +67,12 @@
 
     <section class="fifth-section">
       <div class="row">
-        <h2
-          class="col-12 p-0"
-          data-aos="fade-out"
-          data-aos-duration="2500"
-        >{{ home.Anchor_2_title }}</h2>
-        <h4 class="m-5" data-aos="fade-in" data-aos-duration="3000">{{ home.Anchor_2_desc }}</h4>
+        <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">
+          {{ home.Anchor_2_title }}
+        </h2>
+        <h4 class="m-5" data-aos="fade-in" data-aos-duration="3000">
+          {{ home.Anchor_2_desc }}
+        </h4>
         <div class="col-12 p-0">
           <img src="../../assets/logo-aneh.png" />
         </div>
@@ -71,20 +82,32 @@
     <section class="sixth-section">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-8 ml-md-auto p-0" data-aos="fade-up" data-aos-duration="1500">
-          <img class="img-section" v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].url" />
+        <div
+          class="col-md-8 ml-md-auto p-0"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <img
+            class="img-section"
+            v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].url"
+          />
         </div>
       </div>
     </section>
 
     <section class="seventh-section">
       <div class="row">
-        <h2 data-aos="fade-in" data-aos-duration="3000">{{ home.Anchor_3_title }}</h2>
+        <h2 data-aos="fade-in" data-aos-duration="3000">
+          {{ home.Anchor_3_title }}
+        </h2>
       </div>
     </section>
 
     <section class="eighth-section">
-      <img class="img-section" v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].url" />
+      <img
+        class="img-section"
+        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].url"
+      />
     </section>
 
     <Footer />

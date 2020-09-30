@@ -2,6 +2,13 @@
   .researches-image {
     width: 60%;
   }
+  div.pt-3 p {
+    font-size: 16px;
+  }
+  div.pt-3 p img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
