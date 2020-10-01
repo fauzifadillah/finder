@@ -128,7 +128,7 @@
                 data-aos-duration="3000"
                 class="text-white mb-5 pb-5"
               >
-                Provisional ballots
+                {{ content.title }}
               </h1>
               <!-- Projects Detail -->
               <!-- <h2 data-aos="fade-out" data-aos-duration="3000" class="text-white mb-3">
@@ -146,6 +146,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Projects from "@/components/Projects/Projects";
 import Explainers from "@/components/Explainers/Explainers";
 import Teams from "@/components/Teams/Teams";
@@ -158,6 +159,28 @@ export default {
     Teams,
   },
   props: ["title"],
+  data() {
+    return {
+      content: {},
+      contentId: 0,
+    };
+  },
+  async created() {
+    this.contentId = this.$route.params.id;
+
+    const contentId = this.$route.params.id;
+
+    try {
+      const response = await axios.get(
+        `https://cms.finder.ac.id/research-explainers/${contentId}`
+      );
+
+      console.log(response.data);
+      this.content = response.data;
+    } catch (error) {
+      this.error = error;
+    }
+  },
 };
 </script>
 
