@@ -53,8 +53,8 @@
             </div>
             <div>
               <p>
-                Lorem ipsum dolor ist amet lorem ipsum dolor ist amet Lorem ipsum
-                dolor ist amet lorem ipsum dolor ist amet
+                Lorem ipsum dolor ist amet lorem ipsum dolor ist amet Lorem
+                ipsum dolor ist amet lorem ipsum dolor ist amet
               </p>
             </div>
           </div>

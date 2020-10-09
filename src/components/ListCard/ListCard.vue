@@ -25,7 +25,7 @@
   </template>
   <!-- Explainers -->
   <template v-else-if="title === 'Explainers'">
-    <div class="col-12 pl-0" data-aos="fade-down">
+    <!-- <div class="col-12 pl-0" data-aos="fade-down">
       <h4 class="font-weight-bold">FINDER FOR PHYSICS</h4>
       <p>Research about education at a glance</p>
     </div>
@@ -41,15 +41,15 @@
           <Card title="Explainers" />
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="col-12 pl-0 pt-4" data-aos="fade-down">
-      <h4 class="font-weight-bold">FINDER FOR BIOMATERIALS</h4>
-      <p>Research about education at a glance</p>
+      <!-- <h4 class="font-weight-bold">FINDER FOR BIOMATERIALS</h4>
+      <p>Research about education at a glance</p> -->
     </div>
     <div class="col-12 p-0">
       <div class="row mb-4 d-flex">
         <div
-          class="col-md-4 mb-3"
+          class="col-md-4 mb-4"
           v-for="explainer in explainers"
           :key="explainer.id"
         >
@@ -58,7 +58,14 @@
             <div class="card-explainers" data-aos="fade-down">
               <div class="row hover-tb p-4">
                 <div class="col-12 mb-5">
-                  <h5>{{ explainer.title }}</h5>
+                  <router-link
+                    :to="{
+                      path: `/researches/detail/${explainer.id}`,
+                      params: { ex: explainers },
+                    }"
+                  >
+                    <h5>{{ explainer.title }}</h5>
+                  </router-link>
                 </div>
                 <div class="col-12 mb-3">
                   <router-link
@@ -83,6 +90,39 @@
   <template v-else-if="title === 'Projects'">
     <div class="row mb-4">
       <div class="col-md-6 pr-5">
+        <div class="container-card">
+          <div
+            class="row card-projects"
+            data-aos="fade-down"
+            v-for="project in projects"
+            :key="project.id"
+          >
+            <router-link :to="{ path: '/researches/detail' }">
+              <div class="hover-tb p-4">
+                <div class="col-12 p-0 card-projects-name">
+                  <h6>{{ project.topic }}</h6>
+                </div>
+                <div class="col-12 p-0">
+                  <img
+                    class="card-news-image"
+                    v-bind:src="
+                      'https://cms.finder.ac.id' + project.thumbnail[0].url
+                    "
+                    alt
+                  />
+                </div>
+                <div class="row">
+                  <b class="card-projects-title">{{ project.title }}</b>
+                </div>
+                <div>
+                  <b>
+                    {{ project.short_desc }}
+                  </b>
+                </div>
+              </div>
+            </router-link>
+          </div>
+        </div>
         <Card title="Projects" />
         <Card title="Projects" />
       </div>
@@ -134,7 +174,6 @@
     <div class="col-12 pl-0 mt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">Journal Services</h4>
       <p>Research about education at a glance</p>
-      
     </div>
     <div class="col-12 mt-4 p-0">
       <Card title="Services" />
@@ -157,13 +196,14 @@ export default {
     Card,
   },
   props: {
-    title: { type: String, default: '' },
+    title: { type: String, default: "" },
     // passedItems: { type: Array },
     // explainerId: { type: Number, default: 0 }
   },
   data() {
     return {
       explainers: [],
+      projects: [],
       // nav: [],
       error: null,
       contentId: 0,
@@ -171,10 +211,15 @@ export default {
   },
   async beforeMount() {
     try {
-      const response = await axios
-        .get("https://cms.finder.ac.id/research-explainers")
+      const response = await axios.get(
+        "https://cms.finder.ac.id/research-explainers"
+      );
+      const proj_response = await axios.get(
+        "https://cms.finder.ac.id/projects"
+      );
 
       this.explainers = response.data;
+      this.projects = proj_response.data;
       // const response_nav = await axios.get(
       //   "https://cms.finder.ac.id/navigation-menus"
       // );

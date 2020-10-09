@@ -121,7 +121,7 @@
                 data-aos-duration="3000"
                 class="text-white mb-3"
               >
-                FINDER FOR PHYSICS
+                {{ content.category }}
               </h2>
               <h1
                 data-aos="fade-out"
