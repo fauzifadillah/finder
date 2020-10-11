@@ -90,53 +90,80 @@
       <div class="container-header-red">
         <div class="row">
           <div class="col-12 px-0">
-            <!-- News Detail -->
-            <template v-if="title === 'News Detail'">
-              <h2
-                data-aos="fade-out"
-                data-aos-duration="3000"
-                class="text-white mb-0"
-              >
-                02/02/20
-              </h2>
-              <h2
-                data-aos="fade-out"
-                data-aos-duration="3000"
-                class="text-white mb-5"
-              >
-                News Category
-              </h2>
-              <h1
-                data-aos="fade-out"
-                data-aos-duration="3000"
-                class="text-white mb-5"
-              >
-                Visiting National Taiwan University of Science and Technology
-              </h1>
-            </template>
-            <template v-else-if="title === 'Researches Detail'">
-              <!-- Explainers Detail -->
+            <!-- Explainer Detail -->
+            <template v-if="title === 'Explainer Detail'">
               <h2
                 data-aos="fade-out"
                 data-aos-duration="3000"
                 class="text-white mb-3"
               >
-                {{ content.category }}
+                {{ explainer.category }}
               </h2>
               <h1
                 data-aos="fade-out"
                 data-aos-duration="3000"
                 class="text-white mb-5 pb-5"
               >
-                {{ content.title }}
+                {{ explainer.title }}
               </h1>
-              <!-- Projects Detail -->
-              <!-- <h2 data-aos="fade-out" data-aos-duration="3000" class="text-white mb-3">
-                Projects
+            </template>
+            <!-- News Detail -->
+            <template v-else-if="title === 'News Detail'">
+              <h2
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-0"
+              >
+                {{ news.publish_date }}
               </h2>
-              <h1 data-aos="fade-out" data-aos-duration="3000" class="text-white mb-5 pb-5">
-                Big Data Analytics Living Lab: Better understanding
-              </h1> -->
+              <h2
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-5"
+              >
+                {{ news.category }}
+              </h2>
+              <h1
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-5"
+              >
+                {{ news.title }}
+              </h1>
+            </template>
+            <!-- Project Detail -->
+            <template v-else-if="title === 'Project Detail'">
+              <h2
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-3"
+              >
+                {{ project.topic }}
+              </h2>
+              <h1
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-5 pb-5"
+              >
+                {{ project.title }}
+              </h1>
+            </template>
+            <!-- Service Detail -->
+            <template v-else-if="title === 'Service Detail'">
+              <h2
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-3"
+              >
+                {{ service.title }}
+              </h2>
+              <h1
+                data-aos="fade-out"
+                data-aos-duration="3000"
+                class="text-white mb-5 pb-5"
+              >
+                {{ service.desc }}
+              </h1>
             </template>
           </div>
         </div>
@@ -158,25 +185,42 @@ export default {
     Explainers,
     Teams,
   },
-  props: ["title"],
+  props: {
+    title: { type: String, default: "" },
+  },
   data() {
     return {
-      content: {},
+      explainer: {},
+      project: {},
+      service: {},
+      news: {},
       contentId: 0,
     };
   },
   async created() {
-    this.contentId = this.$route.params.id;
+    this.contentId = this.$route.params.slug;
 
-    const contentId = this.$route.params.id;
+    const contentId = this.$route.params.slug;
 
     try {
-      const response = await axios.get(
+      const explainer_response = await axios.get(
         `https://cms.finder.ac.id/research-explainers/${contentId}`
       );
+      const project_response = await axios.get(
+        `https://cms.finder.ac.id/projects/${contentId}`
+      );
+      const service_response = await axios.get(
+        `https://cms.finder.ac.id/services/${contentId}`
+      );
+      const news_response = await axios.get(
+        `https://cms.finder.ac.id/news-events/${contentId}`
+      );
 
-      console.log(response.data);
-      this.content = response.data;
+      this.explainer = explainer_response.data;
+      this.project = project_response.data;
+      this.service = service_response.data;
+      this.news = news_response.data;
+
     } catch (error) {
       this.error = error;
     }

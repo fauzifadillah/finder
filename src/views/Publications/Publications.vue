@@ -8,7 +8,7 @@
     </section>
     <section class="listpaper-section">
       <div data-aos="fade-down">
-        <ListPaper />
+        <ListCard title="Publications" />
         <div class="text-center py-5">
           <button
             type="button"
@@ -27,12 +27,12 @@
 <script>
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import ListPaper from "@/components/ListPaper/ListPaper";
+import ListCard from "@/components/ListCard/ListCard";
 
 export default {
   name: "Publications",
   components: {
-    ListPaper,
+    ListCard,
     Navbar,
     Footer,
   },

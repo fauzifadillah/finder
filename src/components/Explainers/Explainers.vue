@@ -18,7 +18,6 @@
         </button>
       </div>
     </section>
-    <Footer />
   </div>
 </template>
 
@@ -30,7 +29,6 @@ export default {
   components: {
     ListCard,
   },
-  // props: ["title"],
 };
 </script>
 

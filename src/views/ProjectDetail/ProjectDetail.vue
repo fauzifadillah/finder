@@ -1,9 +1,9 @@
 <template>
-  <div class="container-newsdetail">
+  <div class="container-projectdetail">
     <Navbar />
-    <NavTabs title="News Detail" />
+    <NavTabs title="Project Detail" />
     <div class="detail-section">
-      <div class="container-newsdetailcontent">
+      <div class="container-projectdetailcontent">
         <div v-html="body" class="markdown-content"></div>
       </div>
     </div>
@@ -19,7 +19,7 @@ import NavTabs from "@/components/NavTabs/NavTabs";
 import Footer from "@/components/Footer/Footer";
 
 export default {
-  name: "NewsDetail",
+  name: "ProjectDetail",
   components: {
     Navbar,
     Footer,
@@ -42,7 +42,7 @@ export default {
 
     try {
       const response = await axios.get(
-        `https://cms.finder.ac.id/news-events/${contentId}`
+        `https://cms.finder.ac.id/projects/${contentId}`
       );
 
       console.log(response.data);
@@ -56,5 +56,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "NewsDetail.scss";
+@import "ProjectDetail.scss";
 </style>

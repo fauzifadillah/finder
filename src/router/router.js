@@ -2,11 +2,13 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/Home/Home";
 import Contact from "@/views/Contact/Contact";
 import Researches from "@/views/Researches/Researches";
-import ResearchesDetail from "@/views/ResearchesDetail/ResearchesDetail";
+import ExplainerDetail from "@/views/ExplainerDetail/ExplainerDetail";
+import ProjectDetail from "@/views/ProjectDetail/ProjectDetail";
 import News from "@/views/News/News";
 import NewsDetail from "@/views/NewsDetail/NewsDetail";
 import Publications from "@/views/Publications/Publications";
 import Services from "@/views/Services/Services";
+import ServiceDetail from "@/views/ServiceDetail/ServiceDetail";
 // import NotFound from '@/views/NotFound/NotFound';
 
 const history = createWebHistory();
@@ -29,9 +31,14 @@ const router = createRouter({
       component: Researches,
     },
     {
-      name: "researchesDetail",
-      path: "/researches/detail/:id",
-      component: ResearchesDetail,
+      name: "explainerDetail",
+      path: "/explainer/detail/:slug",
+      component: ExplainerDetail,
+    },
+    {
+      name: "projectDetail",
+      path: "/project/detail/:slug",
+      component: ProjectDetail,
     },
     {
       name: "news",
@@ -40,7 +47,7 @@ const router = createRouter({
     },
     {
       name: "newsDetail",
-      path: "/news/detail",
+      path: "/news/detail/:slug",
       component: NewsDetail,
     },
     {
@@ -52,6 +59,11 @@ const router = createRouter({
       name: "services",
       path: "/services",
       component: Services,
+    },
+    {
+      name: "serviceDetail",
+      path: "/service/detail/:slug",
+      component: ServiceDetail,
     },
     // {
     //   path: '*',
