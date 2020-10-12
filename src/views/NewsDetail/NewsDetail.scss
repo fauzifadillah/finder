@@ -17,6 +17,20 @@
       }
     }
   }
+
+  h2 {
+    line-height: 3rem;
+  }
+
+  .container-header {
+    &-red {
+      padding: 30px 100px 0px 100px;
+      background: #ff0000;
+    }
+  }
+
+  .container-content {
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -28,6 +42,17 @@
     .detail-section {
       margin: 0 50px 400px 50px;
       padding-top: 10px;
+    }
+
+    h2 {
+      line-height: 2.5rem;
+    }
+
+    .container-header {
+      &-red {
+        padding: 40px 50px 0px 50px;
+        background: #ff0000;
+      }
     }
   }
 }
@@ -41,6 +66,17 @@
     .detail-section {
       margin: 0 30px 400px 30px;
       padding-top: 0px;
+    }
+
+    h2 {
+      line-height: 2.5rem;
+    }
+
+    .container-header {
+      &-red {
+        padding: 40px 30px 0px 30px;
+        background: #ff0000;
+      }
     }
   }
 }

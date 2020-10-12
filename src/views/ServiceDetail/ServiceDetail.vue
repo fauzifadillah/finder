@@ -1,7 +1,26 @@
 <template>
   <div class="container-servicedetail">
     <Navbar />
-    <NavTabs title="Service Detail" />
+    <div class="container-header-red">
+      <div class="row mx-0">
+        <div class="col-12 px-0">
+          <h2
+            data-aos="fade-out"
+            data-aos-duration="3000"
+            class="text-white mb-3"
+          >
+            {{ content.title }}
+          </h2>
+          <h1
+            data-aos="fade-out"
+            data-aos-duration="3000"
+            class="text-white mb-5 pb-5"
+          >
+            {{ content.desc }}
+          </h1>
+        </div>
+      </div>
+    </div>
     <div class="detail-section">
       <div class="container-servicedetailcontent">
         <div v-html="body" class="markdown-content"></div>
@@ -15,7 +34,6 @@
 import marked from "marked";
 import axios from "axios";
 import Navbar from "@/components/Navbar/Navbar";
-import NavTabs from "@/components/NavTabs/NavTabs";
 import Footer from "@/components/Footer/Footer";
 
 export default {
@@ -23,7 +41,6 @@ export default {
   components: {
     Navbar,
     Footer,
-    NavTabs,
   },
   props: {
     title: { type: String, default: "" },
