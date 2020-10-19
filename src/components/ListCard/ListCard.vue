@@ -101,13 +101,17 @@
       >
         <div v-if="publication.year == 2018">
           <p>
+            <a :href="publication.doi">
             <b class="text-primary">
               {{ publication.author }}
             </b>
+            </a>
             {{","}}
+            <a :href="publication.doi">
             <b class="text-dark">
               {{ publication.title }}
             </b>
+            </a>
             {{","}}
             {{ publication.publikasi }}
             {{","}}
