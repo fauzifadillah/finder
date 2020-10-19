@@ -45,13 +45,17 @@
       >
         <div v-if="publication.year == 2020">
           <p>
+            <a :href="publication.doi">
             <b class="text-primary">
               {{ publication.author }}
             </b>
+            </a>
             {{","}}
+            <a :href="publication.doi">
             <b class="text-dark">
               {{ publication.title }}
             </b>
+            </a>
             {{","}}
             {{ publication.publikasi }}
             {{","}}
@@ -73,13 +77,17 @@
       >
         <div v-if="publication.year == 2019">
           <p>
+            <a :href="publication.doi">
             <b class="text-primary">
               {{ publication.author }}
             </b>
+            </a>
             {{","}}
+            <a :href="publication.doi">
             <b class="text-dark">
               {{ publication.title }}
             </b>
+            </a>
             {{","}}
             {{ publication.publikasi }}
             {{","}}
