@@ -1,6 +1,8 @@
 .container-navbar {
   padding: 50px 100px;
-
+  #logo-nav {
+    width: 30px;
+  }
   .burger-navbar {
     .visible:nth-child(1) {
       height: 3px;
