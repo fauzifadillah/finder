@@ -88,6 +88,35 @@
         </div>
       </div>
     </div>
+    <!-- 2018 -->
+    <div>
+      <h3>2018</h3>
+      <hr />
+    </div>
+    <div class="container-paper mb-5">
+      <div
+        class="col-12 p-0"
+        v-for="publication in publications"
+        :key="publication.id"
+      >
+        <div v-if="publication.year == 2018">
+          <p>
+            <b class="text-primary">
+              {{ publication.author }}
+            </b>
+            {{","}}
+            <b class="text-dark">
+              {{ publication.title }}
+            </b>
+            {{","}}
+            {{ publication.publikasi }}
+            {{","}}
+            {{ publication.year }}
+          </p>
+        </div>
+      </div>
+    </div>
+
   </template>
 
   <!-- Explainers -->
