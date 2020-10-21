@@ -5,10 +5,11 @@
     <div class="overlay" v-if="!isHidden" v-on:click="isHidden = true">
       <div class="banner d-flex justify-content-center">
         <div class="banner-container m-auto">
+          <div class="banner-close text-right">&times;</div>
           <a href="https://www.w3schools.com">
           <img
             ref="banner-image"
-            class="banner-container-img m-auto"
+            class="banner-container-img m-auto rounded"
             src="https://www.cms.finder.ac.id/uploads/banner_Fi_Nder_conference_01_68fd5d7572.jpg"
           />
           </a>
