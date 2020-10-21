@@ -32,7 +32,7 @@
                     <a href="/contact">Contact</a>
                   </li>
                   <li>
-                    <a href="/news">News</a>
+                    <a href="/news">News/Events</a>
                   </li>
                 </ul>
               </div>

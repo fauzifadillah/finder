@@ -4,7 +4,7 @@
 
     <section class="header-section mb-5">
       <div data-aos="zoom-out"><h1>News</h1></div>
-      <div data-aos="zoom-out"><h3>This is space for news hero</h3></div>
+      <!-- <div data-aos="zoom-out"><h3>This is space for news hero</h3></div> -->
     </section>
     <section class="listnews-section">
       <ListCard title="News" />
