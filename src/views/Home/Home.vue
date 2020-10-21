@@ -6,7 +6,7 @@
       <div class="banner d-flex justify-content-center">
         <div class="banner-container m-auto">
           <div class="banner-close text-right">&times;</div>
-          <a href="https://www.w3schools.com">
+          <a href="https://www.jptranstech.or.id/finder2020">
           <img
             ref="banner-image"
             class="banner-container-img m-auto rounded"
