@@ -1,4 +1,18 @@
 <template>
+<div class="overlay" v-if="!isHidden" v-on:click="isHidden = true">
+  <div id="text" v-on:click="on()">Overlay Text</div>
+  <img
+    ref="banner-image"
+    class="banner"
+    src="https://www.cms.finder.ac.id/uploads/banner_Fi_Nder_conference_01_68fd5d7572.jpg"
+  />
+  <div class="exit" v-on:click="on()">Overlay Text</div>
+</div>
+
+<div class="anak-overlay" style="padding:20px">
+  <h2>Overlay with Text</h2>
+  <button >Turn on overlay effect</button>
+</div>
   <div class="container-home" v-for="home in homes" :key="home.id">
     <Navbar />
 
@@ -135,7 +149,13 @@ export default {
       homes: [],
       nav: [],
       error: null,
+      isHidden: false
     };
+  },
+  methods: {
+    on: function () {
+      // this.display='none';
+    }
   },
   updated() {
     // GSAP Initialization
