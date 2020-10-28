@@ -72,7 +72,7 @@
           </h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
-        <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
+        <div class="col-md-6 pl-4 mt-3" data-aos="zoom-up" data-aos-duration="2500">
           <h6>{{ home.anchor_1_1_desc }}</h6>
         </div>
       </div>
