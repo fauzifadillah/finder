@@ -56,10 +56,24 @@
               home.Anchor_1_title
             }}</span>
           </h2>
+          
+        </div>
+        <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
+          <h6>{{ home.Anchor_1_desc }}</h6>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col-md-6">
+          <h2 class="pr-4">
+            <span ref="anchor1" class="hidetext">{{
+              home.anchor_1_1_title
+            }}</span>
+          </h2>
           <img src="../../assets/logo-aneh.png" />
         </div>
         <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
-          <h5>{{ home.Anchor_1_desc }}</h5>
+          <h6>{{ home.anchor_1_1_desc }}</h6>
         </div>
       </div>
     </section>
