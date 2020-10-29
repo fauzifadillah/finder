@@ -99,9 +99,9 @@
         <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">
           {{ home.Anchor_2_title }}
         </h2>
-        <h4 class="m-5" data-aos="fade-in" data-aos-duration="3000">
+        <h6 class="m-5" style="line-height: 1.6;" data-aos="fade-in" data-aos-duration="3000">
           {{ home.Anchor_2_desc }}
-        </h4>
+        </h6>
         <div class="col-12 p-0">
           <img src="../../assets/logo-aneh.png" />
         </div>
