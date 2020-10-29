@@ -42,7 +42,7 @@
           <img
             ref="image1"
             class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_1[0].url"
+            v-bind:src="'https://cms.finder.ac.id' + home.Image_1[0].formats.medium.url"
           />
         </div>
       </div>
@@ -87,7 +87,7 @@
         >
           <img
             class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].url"
+            v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].formats.medium.url"
           />
         </div>
         <div class="col-md-4"></div>
@@ -118,7 +118,7 @@
         >
           <img
             class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].url"
+            v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].formats.medium.url"
           />
         </div>
       </div>
@@ -135,7 +135,7 @@
     <section class="eighth-section">
       <img
         class="img-section"
-        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].url"
+        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].formats.medium.url"
       />
     </section>
 
