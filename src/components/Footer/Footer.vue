@@ -16,7 +16,7 @@
           ></span>
           <span
             ><p class="text-grey">
-              @finder
+              @finder_id
             </p></span
           >
         </div>

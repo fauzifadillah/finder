@@ -10,12 +10,12 @@
       <div data-aos="fade-down">
         <ListCard title="Publications" />
         <div class="text-center py-5">
-          <button
+          <!-- <button
             type="button"
             class="btn btn-light border border-dark pt-3 pb-2 px-5"
           >
             <h5 class="font-weight-bold">Load More</h5>
-          </button>
+          </button> -->
         </div>
       </div>
     </section>

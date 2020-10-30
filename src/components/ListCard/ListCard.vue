@@ -368,16 +368,16 @@
   <!-- Services -->
   <template v-else-if="title === 'Services'">
     <!-- Sub Title -->
-    <div class="col-12 pl-0 mb-4" data-aos="fade-down">
+    <!-- <div class="col-12 pl-0 mb-4" data-aos="fade-down">
       <h4 class="font-weight-bold">RnD Services</h4>
       <p>Research about education at a glance</p>
-    </div>
+    </div> -->
     <div
       class="col-12 mb-2 p-0"
       v-for="service in services"
       :key="service.id"
     >
-      <router-link :to="`/service/detail/${service.id}`">
+      <a :href="`${service.href}`">
         <div class="container-card">
           <div class="card-services" data-aos="fade-down">
             <div class="row hover-tb p-4">
@@ -392,14 +392,14 @@
             </div>
           </div>
         </div>
-      </router-link>
+      </a>
     </div>
     <!-- Sub Title -->
-    <div class="col-12 pl-0 mt-4" data-aos="fade-down">
+    <!-- <div class="col-12 pl-0 mt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">Analysis</h4>
       <p>Research about education at a glance</p>
-    </div>
-    <div
+    </div> -->
+    <!-- <div
       class="col-12 mb-2 p-0"
       v-for="service in services"
       :key="service.id"
@@ -420,34 +420,32 @@
           </div>
         </div>
       </router-link>
-    </div>
+    </div> -->
     <!-- Sub Title -->
-    <div class="col-12 pl-0 mt-4" data-aos="fade-down">
+    <!-- <div class="col-12 pl-0 mt-4" data-aos="fade-down">
       <h4 class="font-weight-bold">Journal Services</h4>
       <p>Research about education at a glance</p>
-    </div>
-    <div
+    </div> -->
+    <!-- <div
       class="col-12 mb-2 p-0"
-      v-for="service in services"
-      :key="service.id"
     >
-      <router-link :to="`/service/detail/${service.id}`">
+      <a href="https://www.jptranstech.or.id">
         <div class="container-card">
           <div class="card-services" data-aos="fade-down">
             <div class="row hover-tb p-4">
               <div class="col-12 mb-5">
-                <h5>{{ service.title }}</h5>
+                <h5>Journal Services</h5>
               </div>
               <div class="col-12">
-                <a href>
+                <a href="https://www.jptranstech.or.id">
                   <u>Learn more</u>
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </router-link>
-    </div>
+      </a>
+    </div> -->
   </template>
 </template>
 
@@ -484,7 +482,7 @@ export default {
         "https://cms.finder.ac.id/news-events"
       );
       const team_response = await axios.get(
-        "https://cms.finder.ac.id/teams"
+        "https://www.cms.finder.ac.id/teams?_sort=id:ASC"
       );
       const publication_response = await axios.get(
         "https://cms.finder.ac.id/publications"
