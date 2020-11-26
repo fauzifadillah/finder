@@ -8,7 +8,7 @@
           <span class="mr-2"
             ><i class="fa fa-envelope" aria-hidden="true"></i
           ></span>
-          <a href="mailto:nano@finder.ac.id"><u>nano@finder.ac.id</u></a>
+          <a href="mailto:support.finder@unpad.ac.id"><u>support.finder@unpad.ac.id</u></a>
         </div>
         <div class="row">
           <span class="mr-2"
