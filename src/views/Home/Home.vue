@@ -2,7 +2,7 @@
   <div class="container-home" v-for="home in homes" :key="home.id">
     <Navbar />
 
-    <div class="overlay" v-if="!isHidden" v-on:click="isHidden = true">
+    <!-- <div class="overlay" v-if="!isHidden" v-on:click="isHidden = true">
       <div class="banner d-flex justify-content-center">
         <div class="banner-container m-auto">
           <div class="banner-close text-right">&times;</div>
@@ -15,7 +15,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <section class="row first-section">
       <div class="row align-items-center">
@@ -99,7 +99,7 @@
         <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">
           {{ home.Anchor_2_title }}
         </h2>
-        <h6 class="m-5" style="line-height: 1.6;" data-aos="fade-in" data-aos-duration="3000">
+        <h6 id="about-us" class="m-5" style="line-height: 1.6;" data-aos="fade-in" data-aos-duration="3000">
           {{ home.Anchor_2_desc }}
         </h6>
         <div class="col-12 p-0">
