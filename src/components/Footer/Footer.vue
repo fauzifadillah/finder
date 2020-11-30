@@ -24,15 +24,15 @@
       <div class="col-md-auto">
         <p class="footer-address">
           Headquarters <br />
-          Kampus Universitas Padjadjaran <br />
+          Universitas Padjadjaran <br />
           Jalan Raya Bandung-Sumedang KM.21 <br />
-          Jatinangor
+          West Java, Indonesia
         </p>
       </div>
     </div>
     <div class="row">
       <div class="col-md">
-        <p class="text-grey">Copyright 2020 Finder.</p>
+        <p class="text-grey">Copyright 2020 FiNder.</p>
       </div>
       <div class="col-md-auto">
         <p class="text-grey">All right reserved.</p>

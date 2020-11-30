@@ -168,7 +168,7 @@
   <!-- Projects -->
   <template v-else-if="title === 'Projects'">
     <div class="row mb-4">
-      <!-- Left Side -->
+      
       <div class="col-md-6 pr-5">
         <div class="container-card">
           <div
@@ -206,7 +206,7 @@
           </div>
         </div>
       </div>
-      <!-- Right Side -->
+
       <div class="col-md-6 pr-5">
         <div class="container-card">
           <div
@@ -381,10 +381,10 @@
         <div class="container-card">
           <div class="card-services" data-aos="fade-down">
             <div class="row hover-tb p-4">
-              <div class="col-12 mb-5">
+              <div class="col-12 mb-4">
                 <h5>{{ service.title }}</h5>
               </div>
-              <div class="col-12">
+              <div class="col-12 mt-1">
                 <a href>
                   <u>Learn more</u>
                 </a>

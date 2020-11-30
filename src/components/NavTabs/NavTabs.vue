@@ -27,10 +27,10 @@
                 role="tab"
                 aria-controls="pills-home"
                 aria-selected="true"
-                >EXPLAINERS</a
+                >RnD</a
               >
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a
                 class="nav-link"
                 id="pills-profile-tab"
@@ -41,7 +41,7 @@
                 aria-selected="false"
                 >PROJECTS</a
               >
-            </li>
+            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"

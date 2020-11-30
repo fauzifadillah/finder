@@ -2,7 +2,7 @@
   <div class="container-explainers">
     <section class="header-section">
       <div data-aos="zoom-in" data-aos-duration="1000">
-        <h1>Explainers</h1>
+        <h1>Research & Development</h1>
       </div>
     </section>
     <section class="listexplainers-section">

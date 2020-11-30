@@ -126,16 +126,16 @@
 
     <section class="seventh-section">
       <div class="row">
-        <h2 data-aos="fade-in" data-aos-duration="3000">
+        <h3 style="font-size: 32px" data-aos="fade-in" data-aos-duration="3000">
           {{ home.Anchor_3_title }}
-        </h2>
+        </h3>
       </div>
     </section>
 
     <section class="eighth-section">
       <img
         class="img-section"
-        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].formats.medium.url"
+        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].formats.large.url"
       />
     </section>
 
