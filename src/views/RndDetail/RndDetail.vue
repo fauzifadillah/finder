@@ -37,7 +37,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 export default {
-  name: "ExplainerDetail",
+  name: "RndDetail",
   components: {
     Navbar,
     Footer,
@@ -73,5 +73,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "ExplainerDetail.scss";
+@import "RndDetail.scss";
 </style>

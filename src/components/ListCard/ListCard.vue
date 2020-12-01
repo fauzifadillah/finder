@@ -131,8 +131,8 @@
 
   </template>
 
-  <!-- Explainers -->
-  <template v-else-if="title === 'Explainers'">
+  <!-- Rnds -->
+  <template v-else-if="title === 'Rnds'">
     <div class="col-12 pl-0 pt-4" data-aos="fade-down">
       <!-- <h4 class="font-weight-bold">FINDER FOR BIOMATERIALS</h4>
       <p>Research about education at a glance</p> -->
@@ -141,15 +141,15 @@
       <div class="row mb-4 d-flex">
         <div
           class="col-md-4 mb-4"
-          v-for="explainer in explainers"
-          :key="explainer.id"
+          v-for="rnd in rnds"
+          :key="rnd.id"
         >
           <div class="container-card">
             <div class="card-explainers" data-aos="fade-down">
               <div class="row hover-tb p-4">
-                <router-link :to="`/explainer/detail/${explainer.id}`">
+                <router-link :to="`/explainer/detail/${rnd.id}`">
                   <div class="col-12 mb-5">
-                    <h5>{{ explainer.title }}</h5>
+                    <h5>{{ rnd.title }}</h5>
                   </div>
                   <div class="col-12 card-explainers-learn-more">
                     <a href>
@@ -166,7 +166,7 @@
   </template>
 
   <!-- Projects -->
-  <template v-else-if="title === 'Projects'">
+  <!-- <template v-else-if="title === 'Projects'">
     <div class="row mb-4">
       
       <div class="col-md-6 pr-5">
@@ -245,7 +245,7 @@
         </div>
       </div>
     </div>
-  </template>
+  </template> -->
 
   <!-- Teams -->
   <template v-else-if="title === 'Teams'">
@@ -260,87 +260,85 @@
             :key="team.id"
           >
             <div v-if="!(i % 2)" class="mb-5">
-              <router-link :to="`/team/detail/${team.id}`">
-                <div class="hover-tb p-4">
-                  <div class="row card-teams-location">
-                    <div class="col">
-                      <h6>{{ team.location }}</h6>
-                    </div>
-                    <div class="col-auto ml-auto">
-                      <h6>{{ team.institution }}</h6>
-                    </div>
+              <div class="hover-tb p-4">
+                <div class="row card-teams-location">
+                  <div class="col">
+                    <h6>{{ team.location }}</h6>
                   </div>
-                  <div class="row card-teams-profile">
-                    <div class="col">
-                      <h2>{{ team.name }}</h2>
-                      <p>{{ team.job }}</p>
-                    </div>
-                    <div class="col-auto ml-auto">
-                      <img 
-                        class="card-teams-image"
-                        v-bind:src="
-                          'https://cms.finder.ac.id' + team.avatar[0].url
-                        "
-                        alt="team"
-                      />
-                    </div>
-                  </div>
-                  <div class="row card-teams-contact">
-                    <div class="col-sm-8 pl-0">
-                      <a href>
-                        <u>{{ team.email }}</u>
-                      </a>
-                      <a href>
-                        <u>{{ team.website }}</u>
-                      </a>
-                    </div>
-                    <div class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0">
-                      <span v-if="team.media_image_1">
-                        <a :href="`${team.media_link_1}`">
-                          <img 
-                            class="rounded-circle"
-                            v-bind:src="
-                              'https://cms.finder.ac.id' + team.media_image_1.formats.thumbnail.url
-                            " 
-                            alt="link"
-                            width="40"
-                            height="40"
-                          />
-                        </a>
-                      </span>
-                      <span v-if="team.media_image_2" class="ml-1">
-                        <a :href="`${team.media_link_2}`">
-                          <img 
-                            class="rounded-circle"
-                            v-bind:src="
-                              'https://cms.finder.ac.id' + team.media_image_2.formats.thumbnail.url
-                            " 
-                            alt="link"
-                            width="40"
-                            height="40"
-                          />
-                        </a>
-                      </span>
-                      <span v-if="team.media_image_3" class="ml-1">
-                        <a :href="`${team.media_link_3}`">
-                          <img 
-                            class="rounded-circle"
-                            v-bind:src="
-                              'https://cms.finder.ac.id' + team.media_image_3.formats.thumbnail.url
-                            " 
-                            alt="link"
-                            width="40"
-                            height="40"
-                          />
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <p>{{ team.body }}</p>
+                  <div class="col-auto ml-auto">
+                    <h6>{{ team.institution }}</h6>
                   </div>
                 </div>
-              </router-link>
+                <div class="row card-teams-profile">
+                  <div class="col">
+                    <h2>{{ team.name }}</h2>
+                    <p>{{ team.job }}</p>
+                  </div>
+                  <div class="col-auto ml-auto">
+                    <img 
+                      class="card-teams-image"
+                      v-bind:src="
+                        'https://cms.finder.ac.id' + team.avatar[0].url
+                      "
+                      alt="team"
+                    />
+                  </div>
+                </div>
+                <div class="row card-teams-contact">
+                  <div class="col-sm-8 pl-0">
+                    <a href>
+                      <u>{{ team.email }}</u>
+                    </a>
+                    <a href>
+                      <u>{{ team.website }}</u>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0">
+                    <span v-if="team.media_image_1">
+                      <a :href="`${team.media_link_1}`">
+                        <img 
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' + team.media_image_1.formats.thumbnail.url
+                          " 
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
+                    <span v-if="team.media_image_2" class="ml-1">
+                      <a :href="`${team.media_link_2}`">
+                        <img 
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' + team.media_image_2.formats.thumbnail.url
+                          " 
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
+                    <span v-if="team.media_image_3" class="ml-1">
+                      <a :href="`${team.media_link_3}`">
+                        <img 
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' + team.media_image_3.formats.thumbnail.url
+                          " 
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>{{ team.body }}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -355,48 +353,46 @@
             :key="team.id"
           >
             <div v-if="i % 2" class="mb-5">
-              <router-link :to="`/team/detail/${team.id}`">
-                <div class="hover-tb p-4">
-                  <div class="row card-teams-location">
-                    <div class="col">
-                      <h6>{{ team.location }}</h6>
-                    </div>
-                    <div class="col-auto ml-auto">
-                      <h6>{{ team.institution }}</h6>
-                    </div>
+              <div class="hover-tb p-4">
+                <div class="row card-teams-location">
+                  <div class="col">
+                    <h6>{{ team.location }}</h6>
                   </div>
-                  <div class="row card-teams-profile">
-                    <div class="col">
-                      <h2>{{ team.name }}</h2>
-                      <p>{{ team.job }}</p>
-                    </div>
-                    <div class="col-auto ml-auto">
-                      <img 
-                        class="card-teams-image"
-                        v-bind:src="
-                          'https://cms.finder.ac.id' + team.avatar[0].url
-                        "
-                        alt="team"
-                      />
-                    </div>
-                  </div>
-                  <div class="row card-teams-contact">
-                    <div class="col-12 pl-0">
-                      <a href>
-                        <u>{{ team.email }}</u>
-                      </a>
-                    </div>
-                    <div class="col-12 pl-0">
-                      <a href>
-                        <u>{{ team.website }}</u>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <p>{{ team.body }}</p>
+                  <div class="col-auto ml-auto">
+                    <h6>{{ team.institution }}</h6>
                   </div>
                 </div>
-              </router-link>
+                <div class="row card-teams-profile">
+                  <div class="col">
+                    <h2>{{ team.name }}</h2>
+                    <p>{{ team.job }}</p>
+                  </div>
+                  <div class="col-auto ml-auto">
+                    <img 
+                      class="card-teams-image"
+                      v-bind:src="
+                        'https://cms.finder.ac.id' + team.avatar[0].url
+                      "
+                      alt="team"
+                    />
+                  </div>
+                </div>
+                <div class="row card-teams-contact">
+                  <div class="col-12 pl-0">
+                    <a href>
+                      <u>{{ team.email }}</u>
+                    </a>
+                  </div>
+                  <div class="col-12 pl-0">
+                    <a href>
+                      <u>{{ team.website }}</u>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>{{ team.body }}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -497,7 +493,7 @@ export default {
   },
   data() {
     return {
-      explainers: [],
+      rnds: [],
       projects: [],
       services: [],
       news: [],
@@ -527,7 +523,7 @@ export default {
         "https://cms.finder.ac.id/publications"
       );
 
-      this.explainers = explainer_response.data;
+      this.rnds = explainer_response.data;
       this.projects = project_response.data;
       this.services = service_response.data;
       this.news = news_response.data;

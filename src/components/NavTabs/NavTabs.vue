@@ -1,6 +1,6 @@
 <template>
   <div class="container-navtabs mb-5">
-    <template v-if="title === 'Researches'">
+    <template v-if="title === 'Researchers'">
       <div class="container-header">
         <div class="row">
           <div class="col-lg-8 pl-0">
@@ -65,7 +65,7 @@
             role="tabpanel"
             aria-labelledby="pills-home-tab"
           >
-            <Explainers />
+            <Rnds />
           </div>
           <div
             class="tab-pane"
@@ -92,14 +92,14 @@
 <script>
 import axios from "axios";
 import Projects from "@/components/Projects/Projects";
-import Explainers from "@/components/Explainers/Explainers";
+import Rnds from "@/components/Rnds/Rnds";
 import Teams from "@/components/Teams/Teams";
 
 export default {
   name: "NavTabs",
   components: {
     Projects,
-    Explainers,
+    Rnds,
     Teams,
   },
   props: {
@@ -107,7 +107,7 @@ export default {
   },
   data() {
     return {
-      explainer: {},
+      rnd: {},
       project: {},
       service: {},
       news: {},
@@ -120,7 +120,7 @@ export default {
     const contentId = this.$route.params.slug;
 
     try {
-      const explainer_response = await axios.get(
+      const rnd_response = await axios.get(
         `https://cms.finder.ac.id/research-explainers/${contentId}`
       );
       const project_response = await axios.get(
@@ -133,7 +133,7 @@ export default {
         `https://cms.finder.ac.id/news-events/${contentId}`
       );
 
-      this.explainer = explainer_response.data;
+      this.rnd = rnd_response.data;
       this.project = project_response.data;
       this.service = service_response.data;
       this.news = news_response.data;

@@ -7,7 +7,7 @@
     </section>
     <section class="listexplainers-section">
       <div class="row mx-0">
-        <ListCard title="Explainers" />
+        <ListCard title="Rnds" />
       </div>
       <div class="text-center py-5">
         <!-- <button
@@ -25,7 +25,7 @@
 import ListCard from "@/components/ListCard/ListCard";
 
 export default {
-  name: "Explainers",
+  name: "Rnds",
   components: {
     ListCard,
   },
@@ -33,5 +33,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "Explainers.scss";
+@import "Rnds.scss";
 </style>

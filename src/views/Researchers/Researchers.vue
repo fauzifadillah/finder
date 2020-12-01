@@ -1,7 +1,7 @@
 <template>
   <div class="container-researches">
     <Navbar />
-    <NavTabs title="Researches" />
+    <NavTabs title="Researchers" />
     <Footer />
   </div>
 </template>
@@ -12,7 +12,7 @@ import NavTabs from "@/components/NavTabs/NavTabs";
 import Footer from "@/components/Footer/Footer";
 
 export default {
-  name: "Researches",
+  name: "Researchers",
   components: {
     Navbar,
     Footer,
@@ -23,5 +23,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "Researches.scss";
+@import "Researchers.scss";
 </style>

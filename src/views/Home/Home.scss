@@ -1,6 +1,10 @@
 .main-left {
   position: relative;
+  padding-left: 100px;
+
   .sticky {
+    font-size: 20px;
+    line-height: 1.5rem;
     align-items: center;
     justify-content: center;
     top: 20%;
@@ -12,9 +16,11 @@
   .list-group-item {
     border: none;
     color: #cdcdcd;
+    font-weight: 600;
 
     &:hover {
       background-color: transparent;
+      color: #000;
     }
   }
 
@@ -23,6 +29,10 @@
     border-color: none;
     color: #000;
   }
+}
+
+.main-right {
+  padding-right: 69px;
 }
 
 .overlay {
@@ -39,9 +49,11 @@
   z-index: 2;
   cursor: pointer;
 }
+
 .anak-overlay {
   display: none;
 }
+
 #text {
   position: absolute;
   top: 50%;
@@ -107,17 +119,17 @@
   }
 
   h4 {
-    font-size: 34px;
-    line-height: 5rem;
+    font-size: 26px;
+    line-height: 3.5rem;
   }
 
   h5 {
     font-size: 22px;
-    line-height: 50px;
   }
 
   h6 {
     font-size: 20px;
+    line-height: 2.5rem;
   }
 
   p {
@@ -129,52 +141,41 @@
     padding: 0;
   }
 
-  .footer-section {
-    padding-top: 300px;
-  }
-
   .main-section {
     margin-bottom: 400px !important;
   }
 
   .first-section {
     height: 300px;
-    padding: 0 100px 10px 100px;
+    padding: 0 100px 320px 100px;
   }
 
   .second-section {
-    // background: yellow;
-    padding: 80px 0 0 0;
+    padding: 0;
+    
     .img-section {
-      // top: 0;
-      // right: 0;
-      // background-size: cover;
-      // position: absolute;
       width: 100%;
     }
   }
 
   .third-section {
-    padding: 100px;
+    padding: 100px 0 0 0;
   }
 
   .fourth-section {
-    padding: 0;
+    padding: 200px 0 0 0;
+
     .img-section {
-      // top: 0;
-      // left: 0;
-      // background-size: cover;
-      // position: absolute;
       width: 100%;
     }
   }
 
   .fifth-section {
-    padding: 100px 150px 0 150px;
+    padding: 100px 0 0 0;
   }
 
   .sixth-section {
-    padding: 50px 0 100px 100px;
+    padding: 200px 0 0 0;
 
     .img-section {
       width: 100%;
@@ -182,22 +183,28 @@
   }
 
   .seventh-section {
-    padding: 100px 150px 100px 150px;
+    padding: 100px 0 0 0;
   }
 
   .eighth-section {
-    padding-bottom: 100px;
-    margin: 100px 0 0 0;
-    // height: 630px;
+    padding: 100px 0;
 
     .img-section {
       width: 100%;
-      height: 100%;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
+  .main-left {
+    position: relative;
+    padding-left: 50px;
+  }
+
+  .main-right {
+    padding-right: 35px;
+  }
+
   .container-home {
     h1 {
       font-size: 50px;
@@ -225,7 +232,7 @@
     }
 
     h6 {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     p {
@@ -238,63 +245,41 @@
     }
 
     .second-section {
-      padding: 50px 0 0 0;
-      .img-section {
-        // top: 0;
-        // right: 0;
-        // background-size: cover;
-        // position: absolute;
-        width: 100%;
-      }
+      padding: 0;
     }
 
     .third-section {
-      padding: 50px;
+      padding: 50px 0 0 0;
     }
 
     .fourth-section {
-      padding: 0;
-      // background: yellow;
-      .img-section {
-        // top: 0;
-        // left: 0;
-        // background-size: cover;
-        // position: absolute;
-        width: 100%;
-      }
+      padding: 100px 0 0 0;
     }
 
     .fifth-section {
-      padding: 50px 50px 0 50px;
-      #about-us {
-        font-size: smaller;
-      }
+      padding: 50px 0 0 0;
     }
 
     .sixth-section {
-      padding: 50px 0 100px 100px;
-
-      .img-section {
-        width: 100%;
-      }
+      padding: 100px 0 0 0;
     }
 
     .seventh-section {
-      padding: 50px 50px 50px 50px;
+      padding: 50px 0 0 0;
     }
 
     .eighth-section {
-      margin: 100px 0 400px 0;
-      // height: 630px;
-
-      .img-section {
-        width: 100%;
-      }
+      padding: 50px 0;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
+  .main-right {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .container-home {
     h1 {
       font-size: 30px;
@@ -312,9 +297,8 @@
     }
 
     h4 {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.8rem;
-      margin: 10px !important;
     }
 
     h5 {
@@ -324,7 +308,8 @@
     }
 
     h6 {
-      font-size: 20px;
+      font-size: 14px;
+      line-height: 1.7rem;
     }
 
     p {
@@ -333,59 +318,35 @@
 
     .first-section {
       height: 300px;
-      padding: 0 30px 10px 30px;
+      padding: 0 30px 20px 30px;
     }
 
     .second-section {
       padding: 0;
-      .img-section {
-        // top: 0;
-        // right: 0;
-        // background-size: cover;
-        // position: absolute;
-        width: 100%;
-      }
     }
 
     .third-section {
-      padding: 30px;
+      padding: 30px 0 0 0;
     }
 
     .fourth-section {
-      padding: 0;
-      // background: yellow;
-      .img-section {
-        // top: 0;
-        // left: 0;
-        // background-size: cover;
-        // position: absolute;
-        width: 100%;
-      }
+      padding: 60px 0 0 0;
     }
 
     .fifth-section {
-      padding: 30px 30px 0 30px;
+      padding: 30px 0 0 0;
     }
 
     .sixth-section {
-      padding: 30px 0 100px 100px;
-
-      .img-section {
-        width: 100%;
-      }
+      padding: 60px 0 0 0;
     }
 
     .seventh-section {
-      padding: 30px;
+      padding: 30px 0 0 0;
     }
 
     .eighth-section {
-      margin: 100px 0 400px 0;
-      // height: 630px;
-
-      .img-section {
-        width: 100%;
-      }
+      padding: 30px 0;
     }
   }
 }

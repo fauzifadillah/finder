@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/Home/Home";
 import Contact from "@/views/Contact/Contact";
-import Researches from "@/views/Researches/Researches";
-import ExplainerDetail from "@/views/ExplainerDetail/ExplainerDetail";
+import Researchers from "@/views/Researchers/Researchers";
+import RndDetail from "@/views/RndDetail/RndDetail";
 import ProjectDetail from "@/views/ProjectDetail/ProjectDetail";
 import News from "@/views/News/News";
 import NewsDetail from "@/views/NewsDetail/NewsDetail";
@@ -26,14 +26,14 @@ const router = createRouter({
       component: Contact,
     },
     {
-      name: "researches",
-      path: "/researches",
-      component: Researches,
+      name: "researchers",
+      path: "/researchers",
+      component: Researchers,
     },
     {
-      name: "explainerDetail",
-      path: "/explainer/detail/:slug",
-      component: ExplainerDetail,
+      name: "rndDetail",
+      path: "/rnd/detail/:slug",
+      component: RndDetail,
     },
     {
       name: "projectDetail",
