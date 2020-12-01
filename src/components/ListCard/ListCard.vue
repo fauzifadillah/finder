@@ -151,7 +151,7 @@
                   <div class="col-12 mb-5">
                     <h5>{{ explainer.title }}</h5>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 card-explainers-learn-more">
                     <a href>
                       <u>Learn more</u>
                     </a>
@@ -286,15 +286,54 @@
                     </div>
                   </div>
                   <div class="row card-teams-contact">
-                    <div class="col-12 pl-0">
+                    <div class="col-sm-8 pl-0">
                       <a href>
                         <u>{{ team.email }}</u>
                       </a>
-                    </div>
-                    <div class="col-12 pl-0">
                       <a href>
                         <u>{{ team.website }}</u>
                       </a>
+                    </div>
+                    <div class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0">
+                      <span v-if="team.media_image_1">
+                        <a :href="`${team.media_link_1}`">
+                          <img 
+                            class="rounded-circle"
+                            v-bind:src="
+                              'https://cms.finder.ac.id' + team.media_image_1.formats.thumbnail.url
+                            " 
+                            alt="link"
+                            width="40"
+                            height="40"
+                          />
+                        </a>
+                      </span>
+                      <span v-if="team.media_image_2" class="ml-1">
+                        <a :href="`${team.media_link_2}`">
+                          <img 
+                            class="rounded-circle"
+                            v-bind:src="
+                              'https://cms.finder.ac.id' + team.media_image_2.formats.thumbnail.url
+                            " 
+                            alt="link"
+                            width="40"
+                            height="40"
+                          />
+                        </a>
+                      </span>
+                      <span v-if="team.media_image_3" class="ml-1">
+                        <a :href="`${team.media_link_3}`">
+                          <img 
+                            class="rounded-circle"
+                            v-bind:src="
+                              'https://cms.finder.ac.id' + team.media_image_3.formats.thumbnail.url
+                            " 
+                            alt="link"
+                            width="40"
+                            height="40"
+                          />
+                        </a>
+                      </span>
                     </div>
                   </div>
                   <div class="row">

@@ -1,3 +1,33 @@
+.main-left {
+  position: relative;
+  .sticky {
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    position: sticky;
+    -webkit-position: sticky;
+  }
+  
+  .list-group-item {
+    border: none;
+    color: #cdcdcd;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .list-group-item.active {
+    background-color: transparent;
+    border-color: none;
+    color: #000;
+  }
+}
+
+.main-right {
+  // width: 80%;
+}
+
 .overlay {
   color: blanchedalmond;
   position: fixed;

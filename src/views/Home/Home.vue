@@ -30,115 +30,128 @@
       </div>
     </section>
 
-    <section class="second-section">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div
-          ref="box1"
-          class="col-auto ml-md-auto p-0"
-          data-aos="zoom-in-up"
-          data-aos-duration="2500"
-        >
-          <img
-            ref="image1"
-            class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_1[0].formats.medium.url"
-          />
+    <div class="row">
+      <div class="col-auto ml-5 pl-5 main-left desktop-only">
+        <div id="myScrollspy" class="sticky list-group">
+          <a class="list-group-item list-group-item-action" href="#discovery">Discovery</a>
+          <a class="list-group-item list-group-item-action" href="#vision-mission">Vision & Mission</a>
+          <a class="list-group-item list-group-item-action" href="#about-us">About Us</a>
         </div>
       </div>
-    </section>
 
-    <section class="row third-section">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="pr-4">
-            <span ref="anchor1" class="hidetext">{{
-              home.Anchor_1_title
-            }}</span>
-          </h2>
-          
-        </div>
-        <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
-          <h6>{{ home.Anchor_1_desc }}</h6>
+      <div class="col main-right">
+        <div>
+          <section id="discovery" class="second-section">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div
+                ref="box1"
+                class="col-auto ml-md-auto p-0"
+                data-aos="zoom-in-up"
+                data-aos-duration="2500"
+              >
+                <img
+                  ref="image1"
+                  class="img-section"
+                  v-bind:src="'https://cms.finder.ac.id' + home.Image_1[0].formats.medium.url"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section id="vision-mission" class="row third-section">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="pr-4">
+                  <span ref="anchor1" class="hidetext">{{
+                    home.Anchor_1_title
+                  }}</span>
+                </h2>
+                
+              </div>
+              <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
+                <h6>{{ home.Anchor_1_desc }}</h6>
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-md-6">
+                <h2 class="pr-4">
+                  <span ref="anchor1" class="hidetext">{{
+                    home.anchor_1_1_title
+                  }}</span>
+                </h2>
+                <img src="../../assets/logo-aneh.png" />
+              </div>
+              <div class="col-md-6 pl-4 mt-3" data-aos="zoom-up" data-aos-duration="2500">
+                <h6>{{ home.anchor_1_1_desc }}</h6>
+              </div>
+            </div>
+          </section>
+
+          <section class="fourth-section">
+            <div class="row">
+              <div
+                class="col-auto mr-md-auto p-0"
+                data-aos="fade-right"
+                data-aos-duration="2500"
+              >
+                <img
+                  class="img-section"
+                  v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].formats.medium.url"
+                />
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+          </section>
+
+          <section id="about-us" class="fifth-section">
+            <div class="row">
+              <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">
+                {{ home.Anchor_2_title }}
+              </h2>
+              <h6 id="about-us" class="m-5" style="line-height: 1.6;" data-aos="fade-in" data-aos-duration="3000">
+                {{ home.Anchor_2_desc }}
+              </h6>
+              <div class="col-12 p-0">
+                <img src="../../assets/logo-aneh.png" />
+              </div>
+            </div>
+          </section>
+
+          <section class="sixth-section">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div
+                class="col-md-8 ml-md-auto p-0"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <img
+                  class="img-section"
+                  v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].formats.medium.url"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="seventh-section">
+            <div class="row">
+              <h3 style="font-size: 32px" data-aos="fade-in" data-aos-duration="3000">
+                {{ home.Anchor_3_title }}
+              </h3>
+            </div>
+          </section>
+
+          <section class="eighth-section">
+            <img
+              class="img-section"
+              v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].formats.large.url"
+            />
+          </section>
         </div>
       </div>
-      <div class="row">
-        
-        <div class="col-md-6">
-          <h2 class="pr-4">
-            <span ref="anchor1" class="hidetext">{{
-              home.anchor_1_1_title
-            }}</span>
-          </h2>
-          <img src="../../assets/logo-aneh.png" />
-        </div>
-        <div class="col-md-6 pl-4 mt-3" data-aos="zoom-up" data-aos-duration="2500">
-          <h6>{{ home.anchor_1_1_desc }}</h6>
-        </div>
-      </div>
-    </section>
-
-    <section class="fourth-section">
-      <div class="row">
-        <div
-          class="col-auto mr-md-auto p-0"
-          data-aos="fade-right"
-          data-aos-duration="2500"
-        >
-          <img
-            class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_2[0].formats.medium.url"
-          />
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-    </section>
-
-    <section class="fifth-section">
-      <div class="row">
-        <h2 class="col-12 p-0" data-aos="fade-out" data-aos-duration="2500">
-          {{ home.Anchor_2_title }}
-        </h2>
-        <h6 id="about-us" class="m-5" style="line-height: 1.6;" data-aos="fade-in" data-aos-duration="3000">
-          {{ home.Anchor_2_desc }}
-        </h6>
-        <div class="col-12 p-0">
-          <img src="../../assets/logo-aneh.png" />
-        </div>
-      </div>
-    </section>
-
-    <section class="sixth-section">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div
-          class="col-md-8 ml-md-auto p-0"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          <img
-            class="img-section"
-            v-bind:src="'https://cms.finder.ac.id' + home.Image_3[0].formats.medium.url"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="seventh-section">
-      <div class="row">
-        <h3 style="font-size: 32px" data-aos="fade-in" data-aos-duration="3000">
-          {{ home.Anchor_3_title }}
-        </h3>
-      </div>
-    </section>
-
-    <section class="eighth-section">
-      <img
-        class="img-section"
-        v-bind:src="'https://cms.finder.ac.id' + home.Image_4[0].formats.large.url"
-      />
-    </section>
-
+    </div>
     <Footer />
   </div>
 </template>

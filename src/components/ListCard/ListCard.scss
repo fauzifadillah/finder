@@ -32,6 +32,16 @@ p {
     /* Style Card Explainers */
     &-explainers {
       height: 190px;
+      position: relative;
+
+      &-learn-more {
+        position: absolute;
+        bottom: 30px;
+      }
+
+      .row {
+        height: 190px;
+      }
 
       h5 {
         color: #ff0000;
@@ -121,12 +131,12 @@ p {
 
     /* Style Card Teams */
     &-teams {
-      
       h6 {
         font-size: 11px;
       }
 
       .hover-tb {
+        height: 300px;
         cursor: pointer;
         border-bottom: 5px solid #ff0000;
         background-size: 100% 200%;
@@ -174,6 +184,10 @@ p {
 
       &-contact {
         padding-bottom: 40px;
+
+        &-link {
+          z-index: 1000 !important;
+        }
       }
 
       &-image {
@@ -267,6 +281,9 @@ p {
       a {
         font-size: 13px;
       }
+      .hover-tb {
+        // height: 500px;
+      }
       &-location {
         color: #aeaeae;
         font-size: 13px;
@@ -288,6 +305,11 @@ p {
   .card {
     &-news {
       padding-bottom: 40px;
+    }
+    &-teams {
+      .hover-tb {
+        height: auto !important;
+      }
     }
   }
 }

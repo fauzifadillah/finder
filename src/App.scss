@@ -145,6 +145,10 @@ b {
   }
 }
 
+.desktop-only {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .cursor {
     display: none;
@@ -166,4 +170,7 @@ b {
 }
 
 @media screen and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
 }
