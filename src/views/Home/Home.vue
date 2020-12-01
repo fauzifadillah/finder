@@ -97,7 +97,7 @@
         <section class="fourth-section">
           <div class="row">
             <div
-              class="col-12"
+              class="col-12 p-sm-0"
               data-aos="zoom-in-up"
               data-aos-duration="2500"
             >
@@ -134,7 +134,7 @@
         <section class="sixth-section">
           <div class="row">
             <div
-              class="col-12"
+              class="col-12 p-sm-0"
               data-aos="zoom-in-up"
               data-aos-duration="2500"
             >
@@ -161,7 +161,7 @@
         <section class="eighth-section">
           <div class="row">
             <div
-              class="col-12"
+              class="col-12 p-sm-0"
               data-aos="zoom-in-up"
               data-aos-duration="2500"
             >
