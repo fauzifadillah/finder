@@ -30,7 +30,7 @@
       </div>
     </section>
 
-    <div class="row">
+    <div class="row main-section">
       <div class="col-auto ml-5 pl-5 main-left desktop-only">
         <div id="myScrollspy" class="sticky list-group">
           <a class="list-group-item list-group-item-action" href="#discovery">Discovery</a>
@@ -63,27 +63,20 @@
             <div class="row">
               <div class="col-md-6">
                 <h2 class="pr-4">
-                  <span ref="anchor1" class="hidetext">{{
+                  <span ref="anchor1" class="hidetext pb-0">{{
                     home.Anchor_1_title
                   }}</span>
                 </h2>
-                
-              </div>
-              <div class="col-md-6 pl-4" data-aos="zoom-up" data-aos-duration="2500">
+                <img src="../../assets/logo-aneh.png" class="mb-2"/>
                 <h6>{{ home.Anchor_1_desc }}</h6>
               </div>
-            </div>
-            <div class="row">
-              
               <div class="col-md-6">
                 <h2 class="pr-4">
-                  <span ref="anchor1" class="hidetext">{{
+                  <span ref="anchor1" class="hidetext pb-0">{{
                     home.anchor_1_1_title
                   }}</span>
                 </h2>
-                <img src="../../assets/logo-aneh.png" />
-              </div>
-              <div class="col-md-6 pl-4 mt-3" data-aos="zoom-up" data-aos-duration="2500">
+                <img src="../../assets/logo-aneh.png" class="mb-2"/>
                 <h6>{{ home.anchor_1_1_desc }}</h6>
               </div>
             </div>

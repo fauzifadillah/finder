@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     top: 20%;
+    padding-bottom: 50vh;
     position: sticky;
     -webkit-position: sticky;
   }
@@ -22,10 +23,6 @@
     border-color: none;
     color: #000;
   }
-}
-
-.main-right {
-  // width: 80%;
 }
 
 .overlay {
@@ -132,6 +129,14 @@
     padding: 0;
   }
 
+  .footer-section {
+    padding-top: 300px;
+  }
+
+  .main-section {
+    margin-bottom: 400px !important;
+  }
+
   .first-section {
     height: 300px;
     padding: 0 100px 10px 100px;
@@ -181,7 +186,8 @@
   }
 
   .eighth-section {
-    margin: 100px 0 400px 0;
+    padding-bottom: 100px;
+    margin: 100px 0 0 0;
     // height: 630px;
 
     .img-section {
