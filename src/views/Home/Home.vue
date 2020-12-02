@@ -38,7 +38,7 @@
             <a class="list-group-item list-group-item-action" href="#discovery">Discovery</a>
             <a class="list-group-item list-group-item-action" href="#vision">Vision</a>
             <a class="list-group-item list-group-item-action" href="#mission">Mission</a>
-            <a class="list-group-item list-group-item-action" href="#about-us">About Us</a>
+            <a class="list-group-item list-group-item-action" href="#about">About</a>
           </div>
         </div>
 
@@ -111,7 +111,7 @@
             </div>
           </section>
 
-          <section id="about-us" class="fifth-section px-1 px-sm-2 px-md-5">
+          <section id="about" class="fifth-section px-1 px-sm-2 px-md-5">
             <div class="row">
               <h2
                 class="col-12"
@@ -188,7 +188,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 // import VueAos from 'vue-aos'
 import axios from "axios";
-import { TimelineMax, Power3, Power4, gsap } from "gsap";
+import { TimelineMax, Power4, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -226,16 +226,16 @@ export default {
       },
       1.15
     );
-    tl.fromTo(
-      this.$refs.anchor1,
-      3.5,
-      {
-        y: "100%",
-        ease: Power3.easeInOut,
-      },
-      { y: "10%", ease: Power4.easeInOut },
-      "-=2.5"
-    );
+    // tl.fromTo(
+    //   this.$refs.anchor1,
+    //   3.5,
+    //   {
+    //     y: "100%",
+    //     ease: Power3.easeInOut,
+    //   },
+    //   { y: "10%", ease: Power4.easeInOut },
+    //   "-=2.5"
+    // );
     tl.from(this.$refs.tagline, 2.5, { y: "-15%", ease: Power4.fadeIn }, 0.5);
     // gsap.to(this.$refs.box1, {
     //   duration: 1,

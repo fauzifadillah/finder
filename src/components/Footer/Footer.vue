@@ -2,7 +2,7 @@
   <div class="container-footer">
     <div class="row">
       <div class="col-md">
-        <img src="../../assets/footer-logo.png" alt="" />
+        <img src="../../assets/logo_footer.png" alt="" />
         <br />
         <div class="row mt-4 mb-2">
           <span class="mr-2"
@@ -22,6 +22,15 @@
         </div>
       </div>
       <div class="col-md-auto">
+        <div class="col-md-12">
+        <a href="https://www.pui-pt.org/">
+        <img id="puipt"  src="../../assets/puipt.png" alt="" />
+        </a>
+        <a href="https://www.unpad.ac.id/">
+        <img id="unpad"  src="../../assets/unpadbw.jpg" alt="" />
+        </a>
+        </div>
+        
         <p class="footer-address">
           Headquarters <br />
           Universitas Padjadjaran <br />

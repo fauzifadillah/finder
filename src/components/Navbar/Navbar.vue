@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col" data-aos="flip-up" data-aos-duration="1000">
         <router-link :to="{ name: 'home' }">
-          <img id="logo-nav" src="../../assets/logo.png" />
+          <img id="logo-nav" src="../../assets/logo_lengkap.png" />
         </router-link>
       </div>
       <div class="col-auto mr-4 pr-4 ml-auto burger-navbar">

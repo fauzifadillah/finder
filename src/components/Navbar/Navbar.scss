@@ -1,8 +1,8 @@
 .container-navbar {
   padding: 50px 100px;
-  
+
   #logo-nav {
-    width: 40px;
+    width: 228px;
   }
   .burger-navbar {
     .visible:nth-child(1) {
@@ -131,10 +131,10 @@
   }
 
   /* Rotate On Hover When Checked */
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
-    // transform: rotate(180deg);
-    // background: #fff;
-  }
+  // .menu-wrap .toggler:checked:hover + .hamburger > div {
+  //   // transform: rotate(180deg);
+  //   // background: #fff;
+  // }
 
   /* Show Menu */
   .menu-wrap .toggler:checked ~ .menu {

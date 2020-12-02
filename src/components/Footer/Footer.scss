@@ -28,6 +28,19 @@
   .footer-address {
     text-align: right;
   }
+  .col-md-12 {
+    text-align: right;
+    padding: 0 1px;
+    margin-bottom: 2px;
+  }
+  #unpad {
+    width: 75px;
+    margin: auto;
+  }
+  #puipt {
+    width: 125px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -40,6 +53,17 @@
   .container-footer {
     .footer-address {
       text-align: left;
+    }
+    .col-md-12 {
+      text-align: left;
+    }
+    #unpad {
+      width: 75px;
+      margin: auto;
+    }
+    #puipt {
+      width: 90px;
+      margin: auto;
     }
   }
 }
