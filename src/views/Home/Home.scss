@@ -1,3 +1,8 @@
+.bg-blurred {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+}
+
 .main-left {
   position: relative;
   padding-left: 100px;
@@ -17,6 +22,7 @@
     border: none;
     color: #cdcdcd;
     font-weight: 600;
+    background-color: transparent;
 
     &:hover {
       background-color: transparent;
@@ -73,6 +79,9 @@
 }
 .container-home {
   background: #fff;
+  // background: url('https://media.gettyimages.com/photos/incense-series-picture-id157334516?k=6&m=157334516&s=612x612&w=0&h=bxUUOwiZji6LL0UTTwGiD6U6RoE0xG7v7Ga9Hm_s7xk='); 
+  // background-size: cover;
+  // background-attachment: fixed;
 
   .hidetext {
     display: block;

@@ -23,7 +23,7 @@
                     <a href="https://www.blog.finder.ac.id">Activity</a>
                   </li>
                   <li>
-                    <a href="/researches">Researchers</a>
+                    <a href="/researchers">Researchers</a>
                   </li>
                   <li>
                     <a href="https://www.blog.finder.ac.id/?p=2292">Publications</a>

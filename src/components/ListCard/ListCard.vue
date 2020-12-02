@@ -147,7 +147,7 @@
           <div class="container-card">
             <div class="card-explainers" data-aos="fade-down">
               <div class="row hover-tb p-4">
-                <router-link :to="`/explainer/detail/${rnd.id}`">
+                <router-link :to="`/rnd/detail/${rnd.id}`">
                   <div class="col-12 mb-5">
                     <h5>{{ rnd.title }}</h5>
                   </div>
@@ -504,7 +504,7 @@ export default {
   },
   async beforeMount() {
     try {
-      const explainer_response = await axios.get(
+      const rnd_response = await axios.get(
         "https://cms.finder.ac.id/research-explainers"
       );
       const project_response = await axios.get(
@@ -523,7 +523,7 @@ export default {
         "https://cms.finder.ac.id/publications"
       );
 
-      this.rnds = explainer_response.data;
+      this.rnds = rnd_response.data;
       this.projects = project_response.data;
       this.services = service_response.data;
       this.news = news_response.data;
