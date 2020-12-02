@@ -39,6 +39,7 @@
             <a class="list-group-item list-group-item-action" href="#vision">Vision</a>
             <a class="list-group-item list-group-item-action" href="#mission">Mission</a>
             <a class="list-group-item list-group-item-action" href="#about">About</a>
+            <a class="list-group-item list-group-item-action" href="https://blog.finder.ac.id">Activity</a>
           </div>
         </div>
 
