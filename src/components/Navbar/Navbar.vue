@@ -23,10 +23,12 @@
                     <a href="https://www.blog.finder.ac.id">Activity</a>
                   </li>
                   <li>
-                    <a href="/researchers">Researchers</a>
+                    <a href="/researchers">R n D</a>
                   </li>
                   <li>
-                    <a href="https://www.blog.finder.ac.id/?p=2292">Publications</a>
+                    <a href="https://www.blog.finder.ac.id/?p=2292"
+                      >Publications</a
+                    >
                   </li>
                   <li>
                     <a href="/services">Services</a>
@@ -34,7 +36,6 @@
                   <li>
                     <a href="/contact">Contact</a>
                   </li>
-                  
                 </ul>
               </div>
             </div>
