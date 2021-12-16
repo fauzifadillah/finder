@@ -2,21 +2,17 @@
   <!-- News -->
   <template v-if="title === 'News'">
     <div class="row mb-4 d-flex">
-      <div
-        class="col-md-4 mb-4"
-        v-for="event in news"
-        :key="event.id"
-      >
+      <div class="col-md-4 mb-4" v-for="event in news" :key="event.id">
         <div class="container-card">
           <div class="card-news" data-aos="fade-down">
             <router-link :to="`/news/detail/${event.id}`">
               <div class="row">
-                <img 
+                <img
                   class="card-news-image"
                   v-bind:src="
                     'https://cms.finder.ac.id' + event.thumbnail[0].url
-                  " 
-                  alt="news" 
+                  "
+                  alt="news"
                 />
               </div>
               <div class="mt-2">
@@ -46,19 +42,19 @@
         <div v-if="publication.year == 2020">
           <p>
             <a :href="publication.doi">
-            <b class="text-primary">
-              {{ publication.author }}
-            </b>
+              <b class="text-primary">
+                {{ publication.author }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             <a :href="publication.doi">
-            <b class="text-dark">
-              {{ publication.title }}
-            </b>
+              <b class="text-dark">
+                {{ publication.title }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             {{ publication.publikasi }}
-            {{","}}
+            {{ "," }}
             {{ publication.year }}
           </p>
         </div>
@@ -78,19 +74,19 @@
         <div v-if="publication.year == 2019">
           <p>
             <a :href="publication.doi">
-            <b class="text-primary">
-              {{ publication.author }}
-            </b>
+              <b class="text-primary">
+                {{ publication.author }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             <a :href="publication.doi">
-            <b class="text-dark">
-              {{ publication.title }}
-            </b>
+              <b class="text-dark">
+                {{ publication.title }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             {{ publication.publikasi }}
-            {{","}}
+            {{ "," }}
             {{ publication.year }}
           </p>
         </div>
@@ -110,25 +106,24 @@
         <div v-if="publication.year == 2018">
           <p>
             <a :href="publication.doi">
-            <b class="text-primary">
-              {{ publication.author }}
-            </b>
+              <b class="text-primary">
+                {{ publication.author }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             <a :href="publication.doi">
-            <b class="text-dark">
-              {{ publication.title }}
-            </b>
+              <b class="text-dark">
+                {{ publication.title }}
+              </b>
             </a>
-            {{","}}
+            {{ "," }}
             {{ publication.publikasi }}
-            {{","}}
+            {{ "," }}
             {{ publication.year }}
           </p>
         </div>
       </div>
     </div>
-
   </template>
 
   <!-- Rnds -->
@@ -139,11 +134,7 @@
     </div>
     <div class="col-12 p-0">
       <div class="row mb-4 d-flex">
-        <div
-          class="col-md-4 mb-4"
-          v-for="rnd in rnds"
-          :key="rnd.id"
-        >
+        <div class="col-md-4 mb-4" v-for="rnd in rnds" :key="rnd.id">
           <div class="container-card">
             <div class="card-explainers" data-aos="fade-down">
               <div class="row hover-tb p-4">
@@ -275,7 +266,7 @@
                     <p>{{ team.job }}</p>
                   </div>
                   <div class="col-auto ml-auto">
-                    <img 
+                    <img
                       class="card-teams-image"
                       v-bind:src="
                         'https://cms.finder.ac.id' + team.avatar[0].url
@@ -293,14 +284,17 @@
                       <u>{{ team.website }}</u>
                     </a>
                   </div>
-                  <div class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0">
+                  <div
+                    class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0"
+                  >
                     <span v-if="team.media_image_1">
                       <a :href="`${team.media_link_1}`">
-                        <img 
+                        <img
                           class="rounded-circle"
                           v-bind:src="
-                            'https://cms.finder.ac.id' + team.media_image_1.formats.thumbnail.url
-                          " 
+                            'https://cms.finder.ac.id' +
+                              team.media_image_1.formats.thumbnail.url
+                          "
                           alt="link"
                           width="40"
                           height="40"
@@ -309,11 +303,12 @@
                     </span>
                     <span v-if="team.media_image_2" class="ml-1">
                       <a :href="`${team.media_link_2}`">
-                        <img 
+                        <img
                           class="rounded-circle"
                           v-bind:src="
-                            'https://cms.finder.ac.id' + team.media_image_2.formats.thumbnail.url
-                          " 
+                            'https://cms.finder.ac.id' +
+                              team.media_image_2.formats.thumbnail.url
+                          "
                           alt="link"
                           width="40"
                           height="40"
@@ -322,11 +317,12 @@
                     </span>
                     <span v-if="team.media_image_3" class="ml-1">
                       <a :href="`${team.media_link_3}`">
-                        <img 
+                        <img
                           class="rounded-circle"
                           v-bind:src="
-                            'https://cms.finder.ac.id' + team.media_image_3.formats.thumbnail.url
-                          " 
+                            'https://cms.finder.ac.id' +
+                              team.media_image_3.formats.thumbnail.url
+                          "
                           alt="link"
                           width="40"
                           height="40"
@@ -368,7 +364,7 @@
                     <p>{{ team.job }}</p>
                   </div>
                   <div class="col-auto ml-auto">
-                    <img 
+                    <img
                       class="card-teams-image"
                       v-bind:src="
                         'https://cms.finder.ac.id' + team.avatar[0].url
@@ -378,15 +374,59 @@
                   </div>
                 </div>
                 <div class="row card-teams-contact">
-                  <div class="col-12 pl-0">
+                  <div class="col-sm-8 pl-0">
                     <a href>
                       <u>{{ team.email }}</u>
                     </a>
-                  </div>
-                  <div class="col-12 pl-0">
                     <a href>
                       <u>{{ team.website }}</u>
                     </a>
+                  </div>
+                  <div
+                    class="col-sm-4 card-teams-contact-link text-sm-right mt-3 mt-sm-0 pl-0"
+                  >
+                    <span v-if="team.media_image_1">
+                      <a :href="`${team.media_link_1}`">
+                        <img
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' +
+                              team.media_image_1.formats.thumbnail.url
+                          "
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
+                    <span v-if="team.media_image_2" class="ml-1">
+                      <a :href="`${team.media_link_2}`">
+                        <img
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' +
+                              team.media_image_2.formats.thumbnail.url
+                          "
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
+                    <span v-if="team.media_image_3" class="ml-1">
+                      <a :href="`${team.media_link_3}`">
+                        <img
+                          class="rounded-circle"
+                          v-bind:src="
+                            'https://cms.finder.ac.id' +
+                              team.media_image_3.formats.thumbnail.url
+                          "
+                          alt="link"
+                          width="40"
+                          height="40"
+                        />
+                      </a>
+                    </span>
                   </div>
                 </div>
                 <div class="row">
@@ -407,11 +447,7 @@
       <h4 class="font-weight-bold">RnD Services</h4>
       <p>Research about education at a glance</p>
     </div> -->
-    <div
-      class="col-12 mb-2 p-0"
-      v-for="service in services"
-      :key="service.id"
-    >
+    <div class="col-12 mb-2 p-0" v-for="service in services" :key="service.id">
       <a :href="`${service.href}`">
         <div class="container-card">
           <div class="card-services" data-aos="fade-down">
@@ -529,7 +565,6 @@ export default {
       this.news = news_response.data;
       this.teams = team_response.data;
       this.publications = publication_response.data;
-
     } catch (error) {
       this.error = error;
     }
